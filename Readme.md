@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Руслан Дзюбанов](https://up.htmlacademy.ru/adaptive/8/user/226661).
-* Наставник: `Неизвестно`.
+* Наставник: `Игорь Дерябин`.
 
 ---
 
