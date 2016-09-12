@@ -5,8 +5,125 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
+    <header class="page-header">
+      <a><img class="page-header__logo" src="http://placehold.it/86x35" alt="Mishka" width="86" height="35"></a>
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__list-item"><a href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__list-item"><a href="#">Поиск по сайту</a></li>
+        </ul>
+        <ul class="main-nav__cart">
+          <li class="main-nav__cart-item"><a href="#">Корзина: <span class="main-nav__cart-counter">пока пуста</span></a></li>
+        </ul>
+      </nav>
+      <h2 class="header-title">Милые штуки ручной работы для дома</h2>
+      <ul class="header-menu__list">
+        <li class="header-menu__list-item"><a href="#">Предметы интерьера</a></li>
+        <li class="header-menu__list-item"><a href="#">Вязание на заказ</a></li>
+      </ul>
+    </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <main>
+      <article class="week-product">
+        <h2 class="week-product__name">Вязаные корзинки</h2>
+        <h3 class="week-product__title">Товар недели</h3>
+        <p class="week-product__desc">
+          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+        </p>
+        <table class="week-product__table">
+          <tr>
+            <td>Цвет:</td>
+            <td>«Тиффани»/серый</td>
+          </tr>
+          <tr>
+            <td>Диаметр:</td>
+            <td>25 см</td>
+          </tr>
+          <tr>
+            <td>Высота:</td>
+            <td>15 см</td>
+          </tr>
+        </table>
+        <img class="week-product__image" src="http://placehold.it/260x315" alt="Вязаные корзинки" width="260" height="315">
+        <p class="week-product__price">Цена: <span class="week_product__price-value">990</span> руб.</p>
+        <a class="week-product__order" href="#">Заказать</a>
+      </article>
 
+      <section class="features">
+        <h2 class="features__title">Коротко о нас:</h2>
+        <ul class="features__list">
+          <li class="features__list-item">Экологически чистые материалы</li>
+          <li class="features__list-item">Скандинавский стиль по российской цене</li>
+          <li class="features__list-item">Увеличивает лайки на фотографиях</li>
+          <li class="features__list-item">Связано вручную с любовью и умилением</li>
+          <li class="features__list-item">Поддержка отечественного производителя</li>
+          <li class="features__list-item">Поставляется в подарочной упаковке</li>
+        </ul>
+      </section>
+
+      <section class="reviews">
+        <h2 class="reviews__title">Отзывы</h2>
+        <ul class="reviews__list">
+          <li class="reviews__list-item">
+            <blockquote class="reviews__text">
+              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
+              В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильнее, а также набирают больше лайков!
+            </blockquote>
+            <cite class="reviews__name">Анастасия Красильникова</cite>
+            <cite class="reviews__username">@misssssiskras</cite>
+          </li>
+          <li class="reviews__list-item">
+            <blockquote class="reviews__text">
+              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
+              В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильнее, а также набирают больше лайков!
+            </blockquote>
+            <cite class="reviews__name">Анастасия Красильникова</cite>
+            <cite class="reviews__username">@misssssiskras</cite>
+          </li>
+          <li class="reviews__list-item">
+            <blockquote class="reviews__text">
+              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
+              В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильнее, а также набирают больше лайков!
+            </blockquote>
+            <cite class="reviews__name">Анастасия Красильникова</cite>
+            <cite class="reviews__username">@misssssiskras</cite>
+          </li>
+        </ul>
+        <a class="reviews__write" href="#">Написать</a>
+      </section>
+
+      <section class="contacts">
+        <h2 class="contacts__title">Контакты</h2>
+        <table class="contacts__table">
+          <tr>
+            <td>e-mail:</td>
+            <td><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+          </tr>
+          <tr>
+            <td>адрес:</td>
+            <td>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+          </tr>
+        </table>
+        <div class="map">
+          <img class="map__image" src="http://placehold.it/320x457" alt="Карта" width="320" height="457">
+        </div>
+        <a class="contacts__writeus" href="#">Напишите нам</a>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p class="social">
+        <ul class="social__list">
+          <li class="social__list-item"><a class="social-link  social-link--instagram" href="#" target="_blank">Instagram</a></li>
+          <li class="social__list-item"><a class="social-link  social-link--facebook" href="#" target="_blank">Facebook</a></li>
+          <li class="social__list-item"><a class="social-link  social-link--twitter" href="#" target="_blank">Twitter</a></li>
+        </ul>
+      </p>
+      <p class="copyright">
+        Разработано: <a class="copyright__link" href="https://www.htmlacademy.ru">HTML Academy</a>
+      </p>
+    </footer>
   </body>
 </html>
