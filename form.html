@@ -18,7 +18,7 @@
           <li class="main-nav__cart-item"><a href="#">Корзина: <span class="main-nav__cart-counter">пока пуста</span></a></li>
         </ul>
       </nav>
-      <h2 class="header-title">Вязание на заказ</h2>
+      <h1 class="header-title">Вязание на заказ</h1>
     </header>
 
     <main>
@@ -30,58 +30,58 @@
 
         <fieldset class="order-form__type">
           <legend>Тип</legend>
-          <p>
+          <div>
             <input type="radio" name="order-type" id="radio-1" value="accessory" checked>
             <label for="radio-1">Аксессуар для интерьера</label>
-          </p>
-          <p>
+          </div>
+          <div>
             <input type="radio" name="order-type" id="radio-2" value="toy">
             <label for="radio-2">Детская игрушка</label>
-          </p>
+          </div>
         </fieldset>
 
         <fieldset class="order-form__color">
           <legend>Цвет</legend>
-          <p>
-            <input type="checkbox" name="white" id="checkbox-1">
+          <div>
+            <input type="checkbox" name="color" id="checkbox-1" value="white">
             <label for="checkbox-1">Белый</label>
-          </p>
-          <p>
-            <input type="checkbox" name="gray" id="checkbox-2">
+          </div>
+          <div>
+            <input type="checkbox" name="color" id="checkbox-2" value="gray">
             <label for="checkbox-2">Серый</label>
-          </p>
-          <p>
-            <input type="checkbox" name="tiffany" id="checkbox-3">
+          </div>
+          <div>
+            <input type="checkbox" name="color" id="checkbox-3" value="tiffany">
             <label for="checkbox-3">«Тиффани»</label>
-          </p>
-          <p>
-            <input type="checkbox" name="black" id="checkbox-4">
+          </div>
+          <div>
+            <input type="checkbox" name="color" id="checkbox-4" value="black">
             <label for="checkbox-4">Черный</label>
-          </p>
-          <p>
-            <input type="checkbox" name="pink" id="checkbox-5">
+          </div>
+          <div>
+            <input type="checkbox" name="color" id="checkbox-5" value="pink">
             <label for="checkbox-5">Розовый</label>
-          </p>
-          <p>
-            <input type="checkbox" name="orange" id="checkbox-6">
+          </div>
+          <div>
+            <input type="checkbox" name="color" id="checkbox-6" value="orange">
             <label for="checkbox-6">Оранжевый</label>
-          </p>
+          </div>
         </fieldset>
 
         <fieldset class="order-form__fullname">
           <legend>ФИО</legend>
-          <p>
+          <div>
             <label for="order-name">Имя: </label>
             <input type="text" name="order-name" id="order-name" placeholder="Введите ваше имя" required>
-          </p>
-          <p>
+          </div>
+          <div>
             <label for="order-lastname">Фамилия: </label>
             <input type="text" name="order-lastname" id="order-lastname" placeholder="Укажите фамилию" required>
-          </p>
-          <p>
+          </div>
+          <div>
             <label for="order-patronymic">Отчество: </label>
             <input type="text" name="order-patronymic" id="order-patronymic" placeholder="Отчество, если желаете">
-          </p>
+          </div>
         </fieldset>
 
         <fieldset class="order-form__tel">
@@ -98,7 +98,7 @@
           <legend>Доп</legend>
           <textarea name="order-comment" rows="8" cols="30" placeholder="Опишите все ваши пожелания к заказу" required></textarea>
           <p class="order-form__requirement">Все поля обязательны для заполнения</p>
-          <input type="submit" value="Отправить заказ">
+          <button>Отправить заказ</button>
         </fieldset>
       </form>
     </main>
@@ -112,7 +112,7 @@
         </ul>
       </p>
       <p class="copyright">
-        Разработано: <a class="copyright__link" href="https://www.htmlacademy.ru">HTML Academy</a>
+        Разработано: <a class="copyright__link" href="https://www.htmlacademy.ru"><img src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy" title="HTML Academy"></a>
       </p>
     </footer>
   </body>
