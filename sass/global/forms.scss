@@ -1,0 +1,44 @@
+button {
+  display: block;
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 100%;
+  padding: 15px;
+  background-color: $accent_color;
+  border: none;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+fieldset {
+  border: none;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  font-size: 17px;
+  line-height: 18px;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  padding: 15px 0;
+  border-bottom: 2px solid #000000;
+}
+
+textarea {
+  border: 2px solid #000000;
+  padding: 15px;
+}

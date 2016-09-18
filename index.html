@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="../css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a><img class="page-header__logo" src="http://placehold.it/86x35" alt="Mishka" width="86" height="35"></a>
-      <nav class="main-nav  main-nav--closed  main-nav--nojs">
+      <a><img class="page-header__logo" src="../img/logo-mobile.svg" alt="Mishka" width="86" height="35"></a>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <ul class="main-nav__list">
           <li class="main-nav__list-item"><a href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__list-item"><a href="form.html">Вязание на заказ</a></li>
@@ -18,11 +19,13 @@
           <li class="main-nav__cart-item"><a href="#">Корзина: <span class="main-nav__cart-counter">пока пуста</span></a></li>
         </ul>
       </nav>
-      <h1 class="header-title">Милые штуки ручной работы для дома</h1>
-      <ul class="header-menu__list">
-        <li class="header-menu__list-item"><a href="#">Предметы интерьера</a></li>
-        <li class="header-menu__list-item"><a href="#">Вязание на заказ</a></li>
-      </ul>
+      <section class="header-menu">
+        <h1 class="header-title  header-title__bg">Милые штуки ручной работы для дома</h1>
+        <ul class="header-menu__list">
+          <li class="header-menu__list-item"><a href="#">Предметы интерьера</a></li>
+          <li class="header-menu__list-item"><a href="#">Детские игрушки</a></li>
+        </ul>
+      </section>
     </header>
 
     <main>
@@ -46,7 +49,7 @@
             <td>15 см</td>
           </tr>
         </table>
-        <img class="week-product__image" src="http://placehold.it/260x315" alt="Вязаные корзинки" width="260" height="315">
+        <img class="week-product__image" src="../img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" width="260" height="315">
         <p class="week-product__price">Цена: <span class="week_product__price-value">990</span> руб.</p>
         <a class="week-product__order" href="#">Заказать</a>
       </article>
@@ -93,9 +96,9 @@
         </ul>
         <div class="reviews__nav">
           <button class="reviews__nav-prev">Назад</button>
-          <button class="review__nav-next">Вперед</button>
+          <button class="reviews__nav-next">Вперед</button>
         </div>
-        <a class="reviews__write" href="#">Написать</a>
+        <button class="reviews__write"><a href="#">Написать</a></button>
       </section>
 
       <section class="contacts">
@@ -111,7 +114,7 @@
           </tr>
         </table>
         <div class="map">
-          <img class="map__image" src="http://placehold.it/320x457" alt="Карта" width="320" height="457">
+          <img class="map__image" src="../img/map-mobile@1x.jpg" alt="Карта" width="320" height="457">
         </div>
         <a class="contacts__writeus" href="#">Напишите нам</a>
       </section>
@@ -126,7 +129,7 @@
         </ul>
       </p>
       <p class="copyright">
-        Разработано: <a class="copyright__link" href="https://www.htmlacademy.ru">HTML Academy</a>
+        Разработано <a class="copyright__link" href="https://www.htmlacademy.ru"><img src="../img/htmlacademy.svg" width="27" height="34" alt="HTML Academy" title="HTML Academy"></a>
       </p>
     </footer>
 
@@ -141,7 +144,7 @@
         <label for="radio-2">M</label>
         <input type="radio" name="add-size" value="L" id="radio-3">
         <label for="radio-3">L</label>
-        <button>Добавить</button>
+        <button class="add-to-cart__button">Добавить</button>
       </form>
     </section>
   </body>

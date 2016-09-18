@@ -1,0 +1,28 @@
+// ============================
+// clearfix
+// ============================
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// ============================
+// container
+// ============================
+
+@mixin container {
+  margin: 0 auto;
+}
+
+// ============================
+// wrapper
+// ============================
+
+@mixin wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
