@@ -1,6 +1,10 @@
+.add-to-cart__wrapper {
+  @include wrapper;
+  border: 1px solid red;
+}
+
 .add-to-cart {
   text-align: center;
-  @include wrapper();
 }
 
 .add-to-cart__title {

@@ -1,5 +1,9 @@
+.week-product__wrapper {
+  @include wrapper;
+  border: 1px solid red;
+}
+
 .week-product {
-  @include wrapper();
   margin-top: 33px;
 }
 
@@ -71,7 +75,8 @@
   text-transform: uppercase;
   text-align: center;
   color: $text_color;
-  width: auto;
+  width: 256px;
+  margin: 0 auto;
   padding-top: 15px;
   padding-bottom: 15px;
   border: 2px solid #444444;

@@ -1,5 +1,9 @@
+.features__wrapper {
+  @include wrapper;
+  border: 1px solid red;
+}
+
 .features {
-  @include wrapper();
   margin-top: 33px;
 }
 

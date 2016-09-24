@@ -1,16 +1,18 @@
+.contacts__wrapper {
+  @include wrapper
+  border: 1px solid red;
+}
 .contacts {
   margin-top: 60px;
 }
 
 .contacts__title {
-  @include wrapper();
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
 }
 
 .contacts__table {
-  @include wrapper();
   margin-bottom: 40px;
 }
 
@@ -26,12 +28,9 @@
   width: auto;
 }
 
-.map {
-
-}
-
 .map__image {
-
+  margin: 0 auto;
+  display: block;
 }
 
 .contacts__writeus {
@@ -42,11 +41,11 @@
   text-transform: uppercase;
   text-align: center;
   color: $text_color;
-  width: auto;
+  width: 256px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-left: 20px;
-  margin-right: 20px;
   margin-bottom: 35px;
   margin-top: 35px;
   border: 2px solid #444444;
