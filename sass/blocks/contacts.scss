@@ -1,5 +1,5 @@
 .contacts__wrapper {
-  @include wrapper
+  @include wrapper;
   border: 1px solid red;
 }
 .contacts {

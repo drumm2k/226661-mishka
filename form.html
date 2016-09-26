@@ -7,22 +7,26 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="index.html"><img class="page-header__logo" src="img/logo-mobile.svg" alt="Mishka" width="86" height="35"></a>
-      <nav class="main-nav  main-nav--closed  main-nav--nojs">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list">
-          <li class="main-nav__list-item"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__list-item"><a href="form.html">Вязание на заказ</a></li>
-          <li class="main-nav__list-item"><a href="#">Поиск по сайту</a></li>
-        </ul>
-        <ul class="main-nav__cart">
-          <li class="main-nav__cart-item"><a href="#">Корзина: <span class="main-nav__cart-counter">пока пуста</span></a></li>
-        </ul>
-      </nav>
-      <h1 class="header-title">Вязание на заказ</h1>
+      <div class="page-header__wrapper">
+        <a href="index.html"><img class="page-header__logo" src="img/logo-mobile.svg" alt="Mishka" width="86" height="35"></a>
+        <nav class="main-nav  main-nav--closed  main-nav--nojs">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="main-nav__list-item"><a href="form.html">Вязание на заказ</a></li>
+            <li class="main-nav__list-item"><a href="#">Поиск по сайту</a></li>
+          </ul>
+          <ul class="main-nav__cart">
+            <li class="main-nav__cart-item"><a href="#">Корзина: <span class="main-nav__cart-counter">пока пуста</span></a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
+      <div class="header-menu__wrapper">
+        <h1 class="header-title">Вязание на заказ</h1>
+      </div>
       <form class="order-form" action="#" method="get">
         <p class="order-form__text">
           Мы будем рады воплотить в жизнь ваши пожелания!
@@ -105,16 +109,18 @@
     </main>
 
     <footer class="page-footer">
-      <p class="social">
-        <ul class="social__list">
-          <li class="social__list-item"><a class="social-link  social-link--instagram" href="#" target="_blank">Instagram</a></li>
-          <li class="social__list-item"><a class="social-link  social-link--facebook" href="#" target="_blank">Facebook</a></li>
-          <li class="social__list-item"><a class="social-link  social-link--twitter" href="#" target="_blank">Twitter</a></li>
-        </ul>
-      </p>
-      <p class="copyright">
-        Разработано <a class="copyright__link" href="https://www.htmlacademy.ru"><img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy" title="HTML Academy"></a>
-      </p>
+      <div class="page-footer__wrapper">
+        <p class="social">
+          <ul class="social__list">
+            <li class="social__list-item"><a class="social-link  social-link--instagram" href="#" target="_blank">Instagram</a></li>
+            <li class="social__list-item"><a class="social-link  social-link--facebook" href="#" target="_blank">Facebook</a></li>
+            <li class="social__list-item"><a class="social-link  social-link--twitter" href="#" target="_blank">Twitter</a></li>
+          </ul>
+        </p>
+        <p class="copyright">
+          Разработано <a class="copyright__link" href="https://www.htmlacademy.ru"><img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy" title="HTML Academy"></a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>

@@ -1,6 +1,7 @@
 .week-product__wrapper {
   @include wrapper;
   border: 1px solid red;
+  width: 260px;
 }
 
 .week-product {

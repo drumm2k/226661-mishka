@@ -1,5 +1,6 @@
 .header-menu__wrapper {
   background-color: #fafafa;
+  border-top: 1px solid #ececec;
 }
 
 .header-title {
@@ -24,12 +25,10 @@
 
   @include tablet {
     width: 668px;
-
   }
 
   @include desktop {
     width: 1050px;
-
   }
 }
 
@@ -37,19 +36,31 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  @include wrapper;
+  @include wrapper_wide;
 }
 
 .header-menu__list-item {
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
-  padding: 30px;
-  background-color: $accent_color;
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 35px;
+  padding-right: 200px;
+  padding-left: 30px;
+  background-repeat: no-repeat;
 }
 
-.header-menu__list-item:nth-child(2) {
+.header-menu__list--interior {
+  background-color: $accent_color;
+  background-image: url("../img/icon-interior.svg");
+  background-position: 243px center;
+}
+
+.header-menu__list--toys {
   background-color: $accent_color2;
+  background-image: url("../img/icon-toy.svg");
+  background-position: 233px center;
 }
 
 .header-menu__list-item a {

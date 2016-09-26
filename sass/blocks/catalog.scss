@@ -1,13 +1,13 @@
 .catalog__wrapper {
   @include wrapper;
   border: 2px solid red;
+  margin-top: 30px;
 }
 
 .product {
-  margin-top: 30px;
   display: flex;
   flex-direction: column;
-
+  margin-bottom: 30px;
   @include tablet {
     display: flex;
     flex-direction: row;
@@ -18,7 +18,7 @@
 
 .product__image {
   display: block;
-
+  height: 195px;
   @include tablet {
     width: 325px;
     height: auto;

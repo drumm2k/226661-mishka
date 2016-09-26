@@ -16,14 +16,31 @@
 
 @mixin wrapper {
   margin: 0 auto;
-  width: 320px;
+  width: 260px;
 
   @include tablet {
-    width: 768px;
+    width: 668px;
   }
 
   @include desktop {
-    width: 1150px;
+    width: 1050px;
+  }
+}
+
+// ============================
+// wrapper_wide
+// ============================
+
+@mixin wrapper_wide {
+  margin: 0 auto;
+  width: 320px;
+
+  @include tablet {
+    width: 668px;
+  }
+
+  @include desktop {
+    width: 1050px;
   }
 }
 

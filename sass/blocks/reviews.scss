@@ -1,6 +1,7 @@
 .reviews__wrapper {
   @include wrapper;
   border: 1px solid red;
+  width: 260px;
 }
 
 .reviews {
