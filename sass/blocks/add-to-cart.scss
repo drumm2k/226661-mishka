@@ -1,0 +1,16 @@
+.add-to-cart {
+  text-align: center;
+  @include wrapper();
+}
+
+.add-to-cart__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.add-to-cart__size {
+  font-size: 15px;
+  line-height: 30px;
+  color: $text_color;
+}

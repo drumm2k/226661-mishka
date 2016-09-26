@@ -1,0 +1,41 @@
+.production {
+  @include wrapper();
+  margin-top: 30px;
+}
+
+.production__border {
+  border: 1px solid #ededed;
+}
+
+.production__wrapper {
+  padding-left: 34px;
+  padding-right: 34px;
+}
+
+.production__title {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.production__text {
+  font-size: 13px;
+  line-height: 24px;
+  color: $text_color;
+}
+
+.production__order {
+  display: block;
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: $text_color;
+  width: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 2px solid #444444;
+  background: none;
+  margin-bottom: 33px;
+}
