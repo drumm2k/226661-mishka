@@ -8,25 +8,32 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a href="index.html"><img class="page-header__logo" src="img/logo-mobile.svg" alt="Mishka" width="86" height="35"></a>
         <nav class="main-nav  main-nav--closed  main-nav--nojs">
+          <a href="index.html"><img class="main-nav__logo" src="img/logo-mobile.svg" alt="Mishka" width="86" height="35"></a>
           <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <ul class="main-nav__list">
+          <ul class="main-nav__list  main-nav__menu">
             <li class="main-nav__list-item"><a href="catalog.html">Каталог товаров</a></li>
             <li class="main-nav__list-item"><a href="form.html">Вязание на заказ</a></li>
-            <li class="main-nav__list-item"><a href="#">Поиск по сайту</a></li>
           </ul>
-          <ul class="main-nav__cart">
-            <li class="main-nav__cart-item"><a href="#">Корзина: <span class="main-nav__cart-counter">пока пуста</span></a></li>
+          <ul class="main-nav__list  main-nav__cart">
+            <li class="main-nav__list-item  main-nav__cart-search"><a href="#">Поиск по сайту</a></li>
+            <li class="main-nav__list-item  main-nav__cart-cart"><a href="#">Корзина: <span class="main-nav__cart-counter">пока пуста</span></a></li>
           </ul>
+          <ul class="main-nav__list  main-nav__special">
+            <li class="main-nav__list-item"><a href="#">Новые поступления</a></li>
+            <li class="main-nav__list-item"><a href="#">Распродажа</a></li>
+          </ul>
+          <p class="main-nav__delivery">Бесплатная доставка</p>
         </nav>
       </div>
     </header>
 
     <main>
-      <div class="header-menu__wrapper">
-        <h1 class="header-title">Вязание на заказ</h1>
-      </div>
+      <section class="title-menu">
+        <div class="title-menu__wrapper">
+          <h1 class="title-menu__text">Вязание на заказ</h1>
+        </div>
+      </section>
       <form class="order-form" action="#" method="get">
         <p class="order-form__text">
           Мы будем рады воплотить в жизнь ваши пожелания!
@@ -110,15 +117,14 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <p class="social">
-          <ul class="social__list">
-            <li class="social__list-item"><a class="social-link  social-link--instagram" href="#" target="_blank">Instagram</a></li>
-            <li class="social__list-item"><a class="social-link  social-link--facebook" href="#" target="_blank">Facebook</a></li>
-            <li class="social__list-item"><a class="social-link  social-link--twitter" href="#" target="_blank">Twitter</a></li>
-          </ul>
-        </p>
-        <p class="copyright">
-          Разработано <a class="copyright__link" href="https://www.htmlacademy.ru"><img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy" title="HTML Academy"></a>
+        <a href="index.html"><img class="page-footer__logo" src="img/logo-mobile.svg" width="102" height="34" alt="Mishka"></a>
+        <ul class="page-footer__social">
+          <li class="page-footer__social-item"><a class="social-link  social-link--instagram" href="#" target="_blank">Instagram</a></li>
+          <li class="page-footer__social-item"><a class="social-link  social-link--facebook" href="#" target="_blank">Facebook</a></li>
+          <li class="page-footer__social-item"><a class="social-link  social-link--twitter" href="#" target="_blank">Twitter</a></li>
+        </ul>
+        <p class="page-footer__copyright">
+          Разработано <a class="page-footer__copyright-link" href="https://www.htmlacademy.ru"><img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy" title="HTML Academy"></a>
         </p>
       </div>
     </footer>

@@ -1,7 +1,6 @@
 .reviews__wrapper {
   @include wrapper;
-  border: 1px solid red;
-  width: 260px;
+  position: relative;
 }
 
 .reviews {
@@ -14,12 +13,20 @@
   font-weight: 700;
   padding-bottom: 38px;
   margin: 0;
+
+  @include desktop {
+    margin-left: 175px;
+  }
 }
 
 .reviews__list {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @include desktop {
+    margin-left: 175px;
+  }
 }
 
 .reviews__text {
@@ -38,8 +45,15 @@
   line-height: 24px;
   font-style: normal;
   font-weight: 700;
-  color: #000000;
   display: block;
+
+  @include tablet {
+    margin-top: 50px;
+  }
+
+  @include desktop {
+    margin-top: 50px;
+  }
 }
 
 .reviews__username {
@@ -52,7 +66,6 @@
 .reviews__nav {
   @include clearfix();
   margin-top: 36px;
-  margin-bottom: 36px;
 }
 
 .reviews__nav-prev {
@@ -61,10 +74,26 @@
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
-  border: 1px solid #ececec;
+  border: 1px solid $reviews_nav_border;
   width: 50%;
   height: 50px;
   font-size: 0;
+
+  @include tablet {
+    border: none;
+    position: absolute;
+    width: 0px;
+    right: 106px;
+    bottom: 40px;
+  }
+
+  @include desktop {
+    border: none;
+    position: absolute;
+    width: 0px;
+    right: 106px;
+    bottom: 40px;
+  }
 }
 
 .reviews__nav-next {
@@ -74,10 +103,26 @@
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
-  border: 1px solid #ececec;
+  border: 1px solid $reviews_nav_border;
   width: 50%;
   height: 50px;
   font-size: 0;
+
+  @include tablet {
+    border: none;
+    position: absolute;
+    width: 0px;
+    right: 19px;
+    bottom: 40px;
+  }
+
+  @include desktop {
+    border: none;
+    position: absolute;
+    width: 0px;
+    right: 19px;
+    bottom: 40px;
+  }
 }
 
 .reviews__write {
@@ -90,6 +135,18 @@
   width: 260px;
   margin: 0 auto;
   padding: 15px;
-  border: 2px solid #444444;
+  border: 2px solid $button_border;
   background: none;
+
+  @include tablet {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  @include desktop {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }

@@ -1,6 +1,15 @@
 .add-to-cart__wrapper {
-  @include wrapper;
-  border: 1px solid red;
+  margin: 0 auto;
+  width: 320px;
+  border: 1px solid $add_to_cart_border;
+
+  @include tablet {
+    width: 566px;
+  }
+
+  @include desktop {
+    width: 566px;
+  }
 }
 
 .add-to-cart {
@@ -17,4 +26,11 @@
   font-size: 15px;
   line-height: 30px;
   color: $text_color;
+}
+
+.add-to-cart__button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 31px;
+  margin-bottom: 46px;
 }

@@ -1,21 +1,7 @@
-@import "normalize/_import-now.scss";
+@import "normalize/_import-now";
 
-@import "variables.scss";
-@import "mixins.scss";
+@import "variables";
+@import "mixins";
 
-@import "global/fonts.scss";
-@import "global/forms.scss";
-@import "global/layout.scss";
-@import "global/type.scss";
-
-@import "blocks/page-header.scss";
-@import "blocks/header-menu.scss";
-@import "blocks/week-product.scss";
-@import "blocks/features.scss";
-@import "blocks/reviews.scss";
-@import "blocks/contacts.scss";
-@import "blocks/page-footer.scss";
-@import "blocks/add-to-cart.scss";
-@import "blocks/catalog.scss";
-@import "blocks/production.scss";
-@import "blocks/order-forms.scss";
+@import "global/index";
+@import "blocks/index";

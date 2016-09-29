@@ -1,68 +1,9 @@
 .catalog__wrapper {
   @include wrapper;
-  border: 2px solid red;
   margin-top: 30px;
-}
 
-.product {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 30px;
-  @include tablet {
+  @include desktop {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    flex-grow: 1;
   }
-}
-
-.product__image {
-  display: block;
-  height: 195px;
-  @include tablet {
-    width: 325px;
-    height: auto;
-  }
-}
-
-.product__title {
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: 700;
-}
-
-.product__desc {
-  font-size: 13px;
-  line-height: 30px;
-  color: $text_color;
-}
-
-.product__wrapper {
-  flex-grow: 1;
-  border: 1px solid #ededed;
-}
-
-.product__wrapper-buy {
-  border-top: 1px solid #ededed;
-  display: flex;
-  justify-content: space-between;
-  margin-left: 20px;
-  margin-right: 20px;
-
-  @include tablet {
-  }
-}
-
-.product__price {
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: 700;
-}
-
-.product__buy {
-  font-size: 0px;
-  background-color: #e1e1e1;
-  width: 21px;
-  height: 19px;
-  margin-top: 20px;
 }

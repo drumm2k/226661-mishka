@@ -8,25 +8,32 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a href="index.html"><img class="page-header__logo" src="img/logo-mobile.svg" alt="Mishka" width="86" height="35"></a>
         <nav class="main-nav  main-nav--closed  main-nav--nojs">
+          <a href="index.html"><img class="main-nav__logo" src="img/logo-mobile.svg" alt="Mishka" width="86" height="35"></a>
           <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <ul class="main-nav__list">
+          <ul class="main-nav__list  main-nav__menu">
             <li class="main-nav__list-item"><a href="catalog.html">Каталог товаров</a></li>
             <li class="main-nav__list-item"><a href="form.html">Вязание на заказ</a></li>
-            <li class="main-nav__list-item"><a href="#">Поиск по сайту</a></li>
           </ul>
-          <ul class="main-nav__cart">
-            <li class="main-nav__cart-item"><a href="#">Корзина: <span class="main-nav__cart-counter">пока пуста</span></a></li>
+          <ul class="main-nav__list  main-nav__cart">
+            <li class="main-nav__list-item  main-nav__cart-search"><a href="#">Поиск по сайту</a></li>
+            <li class="main-nav__list-item  main-nav__cart-cart"><a href="#">Корзина: <span class="main-nav__cart-counter">пока пуста</span></a></li>
           </ul>
+          <ul class="main-nav__list  main-nav__special">
+            <li class="main-nav__list-item"><a href="#">Новые поступления</a></li>
+            <li class="main-nav__list-item"><a href="#">Распродажа</a></li>
+          </ul>
+          <p class="main-nav__delivery">Бесплатная доставка</p>
         </nav>
       </div>
     </header>
 
     <main>
-      <div class="header-menu__wrapper">
-        <h1 class="header-title">Каталог товаров</h1>
-      </div>
+      <section class="title-menu">
+        <div class="title-menu__wrapper">
+          <h1 class="title-menu__text">Каталог товаров</h1>
+        </div>
+      </section>
       <section class="catalog">
         <div class="catalog__wrapper">
           <div class="product">
@@ -75,18 +82,14 @@
 
       <section class="production">
         <div class="production__wrapper">
-          <div class="production__border">
-            <h2 class="production__title">Процесс производства</h2>
-            <video poster="img/video-mobile@1x.jpg" width="260" height="150">
-              <source src="" type="video/mp4">
-            </video>
-            <div class="production__wrapper">
-              <p class="production__text">
-                По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-              </p>
-              <a class="production__order" href="#">Сделать заказ</a>
-            </div>
-          </div>
+          <h2 class="production__title">Процесс производства</h2>
+          <video class="production__video" poster="img/video-mobile@1x.jpg" width="260" height="150">
+            <source src="" type="video/mp4">
+          </video>
+          <p class="production__text">
+            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+          </p>
+          <a class="production__order" href="#">Сделать заказ</a>
         </div>
       </section>
     </main>
@@ -94,15 +97,13 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a href="index.html"><img class="page-footer__logo" src="img/logo-mobile.svg" width="102" height="34" alt="Mishka"></a>
-        <p class="social">
-          <ul class="social__list">
-            <li class="social__list-item"><a class="social-link  social-link--instagram" href="#" target="_blank">Instagram</a></li>
-            <li class="social__list-item"><a class="social-link  social-link--facebook" href="#" target="_blank">Facebook</a></li>
-            <li class="social__list-item"><a class="social-link  social-link--twitter" href="#" target="_blank">Twitter</a></li>
-          </ul>
-        </p>
-        <p class="copyright">
-          Разработано <a class="copyright__link" href="https://www.htmlacademy.ru"><img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy" title="HTML Academy"></a>
+        <ul class="page-footer__social">
+          <li class="page-footer__social-item"><a class="social-link  social-link--instagram" href="#" target="_blank">Instagram</a></li>
+          <li class="page-footer__social-item"><a class="social-link  social-link--facebook" href="#" target="_blank">Facebook</a></li>
+          <li class="page-footer__social-item"><a class="social-link  social-link--twitter" href="#" target="_blank">Twitter</a></li>
+        </ul>
+        <p class="page-footer__copyright">
+          Разработано <a class="page-footer__copyright-link" href="https://www.htmlacademy.ru"><img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy" title="HTML Academy"></a>
         </p>
       </div>
     </footer>
@@ -119,7 +120,7 @@
           <label for="radio-2">M</label>
           <input type="radio" name="add-size" value="L" id="radio-3">
           <label for="radio-3">L</label>
-          <button>Добавить</button>
+          <button class="add-to-cart__button">Добавить</button>
         </form>
       </div>
     </section>

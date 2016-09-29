@@ -1,7 +1,12 @@
 .week-product__wrapper {
   @include wrapper;
-  border: 1px solid red;
-  width: 260px;
+
+  @include tablet {
+    position: relative;
+  }
+  @include desktop {
+    position: relative;
+  }
 }
 
 .week-product {
@@ -13,6 +18,11 @@
   line-height: 30px;
   font-weight: 700;
   margin: 0;
+
+  @include desktop {
+    margin-top: 50px;
+    margin-left: 175px;
+  }
 }
 
 .week-product__title {
@@ -23,12 +33,37 @@
   padding-top: 14px;
   margin: 0;
   text-transform: uppercase;
+
+  @include tablet {
+    padding-top: 0;
+    position: absolute;
+    top: 5px;
+    right: 28px;
+    width: 70px;
+  }
+  @include desktop {
+    padding-top: 0;
+    position: absolute;
+    width: 70px;
+    left: 50px;
+    top: 50px;
+  }
 }
 
 .week-product__desc {
   font-size: 15px;
   line-height: 24px;
   color: $text_color;
+
+  @include tablet {
+    width: 260px;
+    margin-top: 50px;
+  }
+  @include desktop {
+    width: 260px;
+    margin-top: 55px;
+    margin-left: 175px;
+  }
 }
 
 .week-product__table {
@@ -37,10 +72,20 @@
   color: $text_color;
   border-collapse: collapse;
   width: 100%;
+
+  @include tablet {
+    width: 290px;
+    margin-top: 50px;
+  }
+  @include desktop {
+    width: 290px;
+    margin-top: 67px;
+    margin-left: 175px;
+  }
 }
 
 .week-product tr {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid $week_product_table_border;
 }
 
 .week-product td {
@@ -58,6 +103,21 @@
   margin-top: 28px;
   width: 100%;
   height: auto;
+
+  @include tablet {
+    margin-top: 0;
+    position: absolute;
+    width: 50%;
+    right: 0;
+    bottom: 0;
+  }
+  @include desktop {
+    margin-top: 0;
+    position: absolute;
+    width: 50%;
+    right: 0;
+    top: 0;
+  }
 }
 
 .week-product__price {
@@ -66,6 +126,17 @@
   font-weight: 700;
   text-align: center;
   color: $text_color;
+  order:0;
+
+  @include tablet {
+    width: 50%;
+    margin-top: 60px;
+  }
+  @include desktop {
+    width: 290px;
+    margin-top: 110px;
+    margin-left: 175px;
+  }
 }
 
 .week-product__order {
@@ -80,6 +151,17 @@
   margin: 0 auto;
   padding-top: 15px;
   padding-bottom: 15px;
-  border: 2px solid #444444;
+  border: 2px solid $button_border;
   background: none;
+
+  @include tablet {
+    margin-left: 0;
+    margin-top: 34px;
+    width: 288px;
+  }
+  @include desktop {
+    margin-left: 175px;
+    margin-top: 34px;
+    width: 288px;
+  }
 }
