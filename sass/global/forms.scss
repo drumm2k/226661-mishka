@@ -31,15 +31,15 @@ textarea {
   border: none;
 
   @include tablet {
-    width: 435px;
-    margin-left: auto;
+    width: 100%;
   }
 }
 
 input[type="text"],
 input[type="tel"],
 input[type="email"] {
-  padding: 15px 0;
+  padding-top: 5px;
+  padding-bottom: 15px;
   border-bottom: 2px solid $forms_border;
 }
 

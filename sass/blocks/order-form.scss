@@ -1,0 +1,260 @@
+.order-form {
+  @include wrapper;
+
+}
+
+// Type
+.order-form__type {
+  margin-top: 31px;
+
+  @include tablet {
+    padding-left: 167px;
+    position: relative;
+    margin-top: 61px;
+    margin-bottom: 61px;
+  }
+
+  @include desktop {
+    padding-left: 175px;
+    padding-right: 175px;
+    position: relative;
+    margin-top: 61px;
+    margin-bottom: 61px;
+  }
+}
+
+.order-form__type .order-form__title {
+  @include tablet {
+    position: absolute;
+    left: 0;
+  }
+
+  @include desktop {
+    position: absolute;
+    left: 0;
+  }
+}
+
+// Color
+.order-form__color {
+  margin-top: 33px;
+
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 167px;
+    position: relative;
+    margin-top: 61px;
+    margin-bottom: 51px;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 175px;
+    position: relative;
+    margin-top: 61px;
+    margin-bottom: 51px;
+  }
+}
+
+.order-form__color .order-form__title {
+  @include tablet {
+    position: absolute;
+    left: 0;
+  }
+
+  @include desktop {
+    position: absolute;
+    left: 0;
+  }
+}
+
+.order-form__checkbox {
+  @include tablet {
+    width: 250px;
+  }
+
+  @include desktop {
+    width: 250px;
+  }
+}
+
+// Fullname
+.order-form__fullname {
+  margin-top: 35px;
+
+  @include tablet {
+    padding-left: 167px;
+    position: relative;
+    margin-top: 66px;
+    margin-bottom: 66px;
+  }
+
+  @include desktop {
+    padding-left: 175px;
+    padding-right: 175px;
+    position: relative;
+    margin-top: 66px;
+    margin-bottom: 66px;
+  }
+}
+
+.order-form__fullname .order-form__title {
+  @include tablet {
+    position: absolute;
+    left: 0;
+  }
+
+  @include desktop {
+    position: absolute;
+    left: 0;
+  }
+}
+
+.order-form__label {
+  @include tablet {
+    padding-right: 25px;
+  }
+
+  @include desktop {
+    padding-right: 25px;
+  }
+}
+
+.order-form__text {
+  @include tablet {
+    margin-bottom: 40px;
+    display: flex;
+    width: 100%;
+  }
+
+  @include desktop {
+    margin-bottom: 40px;
+    display: flex;
+    width: 100%;
+  }
+}
+
+// Tel
+.order-form__tel {
+  margin-top: 36px;
+
+  @include tablet {
+    padding-left: 167px;
+    position: relative;
+    margin-top: 70px;
+  }
+
+  @include desktop {
+    padding-left: 175px;
+    padding-right: 175px;
+    position: relative;
+    margin-top: 70px;
+  }
+}
+
+.order-form__tel .order-form__title {
+  @include tablet {
+    position: absolute;
+    left: 0;
+  }
+
+  @include desktop {
+    position: absolute;
+    left: 0;
+  }
+}
+
+// E-mail
+.order-form__email {
+  margin-top: 41px;
+
+  @include tablet {
+    padding-left: 167px;
+    position: relative;
+    margin-bottom: 67px;
+  }
+
+  @include desktop {
+    padding-left: 175px;
+    padding-right: 175px;
+    position: relative;
+    margin-bottom: 67px;
+  }
+}
+
+.order-form__email .order-form__title {
+  @include tablet {
+    position: absolute;
+    left: 0;
+  }
+
+  @include desktop {
+    position: absolute;
+    left: 0;
+  }
+}
+
+// Comment
+.order-form__comment {
+  margin-top: 35px;
+
+  @include tablet {
+    padding-left: 167px;
+    position: relative;
+    margin-top: 64px;
+  }
+
+  @include desktop {
+    padding-left: 175px;
+    padding-right: 175px;
+    position: relative;
+    margin-top: 64px;
+  }
+}
+
+.order-form__comment .order-form__title {
+  @include tablet {
+    position: absolute;
+    left: 0;
+  }
+
+  @include desktop {
+    position: absolute;
+    left: 0;
+  }
+}
+
+// Send
+.order-form__send {
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 53px;
+    margin-bottom: 52px;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 53px;
+    margin-bottom: 52px;
+    padding-left: 175px;
+    padding-right: 175px;
+  }
+}
+
+.order-form__requirement {
+  @include tablet {
+    order: 1;
+  }
+
+  @include desktop {
+    order: 1;
+  }
+}
