@@ -7,110 +7,120 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="index.html"><img class="page-header__logo" src="img/logo-mobile.svg" alt="Mishka" width="86" height="35"></a>
-      <nav class="main-nav  main-nav--closed  main-nav--nojs">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list">
-          <li class="main-nav__list-item"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__list-item"><a href="form.html">Вязание на заказ</a></li>
-          <li class="main-nav__list-item"><a href="#">Поиск по сайту</a></li>
-        </ul>
-        <ul class="main-nav__cart">
-          <li class="main-nav__cart-item"><a href="#">Корзина: <span class="main-nav__cart-counter">пока пуста</span></a></li>
-        </ul>
-      </nav>
-      <h1 class="header-title">Каталог товаров</h1>
+      <div class="page-header__wrapper">
+        <nav class="main-nav  main-nav--closed  main-nav--nojs">
+          <a href="index.html"><img class="main-nav__logo" src="img/logo-mobile.svg" alt="Mishka" width="86" height="35"></a>
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <ul class="main-nav__list  main-nav__menu">
+            <li class="main-nav__list-item"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="main-nav__list-item"><a href="form.html">Вязание на заказ</a></li>
+          </ul>
+          <ul class="main-nav__list  main-nav__cart">
+            <li class="main-nav__list-item  main-nav__cart-search"><a href="#">Поиск по сайту</a></li>
+            <li class="main-nav__list-item  main-nav__cart-cart"><a href="#">Корзина: <span class="main-nav__cart-counter">пока пуста</span></a></li>
+          </ul>
+          <ul class="main-nav__list  main-nav__special">
+            <li class="main-nav__list-item"><a href="#">Новые поступления</a></li>
+            <li class="main-nav__list-item"><a href="#">Распродажа</a></li>
+          </ul>
+          <p class="main-nav__delivery">Бесплатная доставка</p>
+        </nav>
+      </div>
     </header>
 
     <main>
+      <header class="title">
+          <h1 class="title-text">Каталог товаров</h1>
+      </header>
       <section class="catalog">
-        <div class="product">
-          <a class="product__link" href="#">
-            <img class="product__image" src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
-          </a>
-          <div class="product__wrapper">
-            <h2 class="product__title">Зайчик-попрыгайчик</h2>
-            <p class="product__desc">Рост 30 см, вес 200 г</p>
-            <div class="product__wrapper-buy">
-              <p class="product__price">1 200 руб.</p>
-              <a class="product__buy" href="#">Добавить в корзину</a>
+        <div class="catalog__wrapper">
+          <div class="product">
+            <a class="product__link" href="#">
+              <img class="product__image" src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
+            </a>
+            <div class="product__wrapper">
+              <h2 class="product__title">Зайчик-попрыгайчик</h2>
+              <p class="product__desc">Рост 30 см, вес 200 г</p>
+              <div class="product__wrapper-buy">
+                <span class="product__price">1 200 руб.</span>
+                <a class="product__buy" href="#">Добавить в корзину</a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="product">
-          <a class="product__link" href="#">
-            <img class="product__image" src="img/photo-2-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195">
-          </a>
-          <div class="product__wrapper">
-            <h2 class="product__title">Корзинка для белья</h2>
-            <p class="product__desc">Диаметр 15см, высота 10см</p>
-            <div class="product__wrapper-buy">
-              <p class="product__price">690 руб.</p>
-              <a class="product__buy" href="#">Добавить в корзину</a>
+          <div class="product">
+            <a class="product__link" href="#">
+              <img class="product__image" src="img/photo-2-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195">
+            </a>
+            <div class="product__wrapper">
+              <h2 class="product__title">Корзинка для белья</h2>
+              <p class="product__desc">Диаметр 15см, высота 10см</p>
+              <div class="product__wrapper-buy">
+                <span class="product__price">690 руб.</span>
+                <a class="product__buy" href="#">Добавить в корзину</a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="product">
-          <a class="product__link" href="#">
-            <img class="product__image" src="img/photo-3-mobile@1x.jpg" alt="Большая корзина для игрушек" width="260" height="195">
-          </a>
-          <div class="product__wrapper">
-            <h2 class="product__title">Большая корзина для игрушек</h2>
-            <p class="product__desc">Диаметр 30см, высота 30см</p>
-            <div class="product__wrapper-buy">
-              <p class="product__price">1 500 руб.</p>
-              <a class="product__buy" href="#">Добавить в корзину</a>
+          <div class="product">
+            <a class="product__link" href="#">
+              <img class="product__image" src="img/photo-3-mobile@1x.jpg" alt="Большая корзина для игрушек" width="260" height="195">
+            </a>
+            <div class="product__wrapper">
+              <h2 class="product__title">Большая корзина для игрушек</h2>
+              <p class="product__desc">Диаметр 30см, высота 30см</p>
+              <div class="product__wrapper-buy">
+                <span class="product__price">1 500 руб.</span>
+                <a class="product__buy" href="#">Добавить в корзину</a>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <section class="production">
-        <div class="production__border">
-          <div class="production__wrapper">
-            <h2 class="production__title">Процесс производства</h2>
-          </div>
-          <video poster="img/video-mobile@1x.jpg" width="260" height="150">
-            <source src="" type="video/mp4">
+        <div class="production__wrapper">
+          <h2 class="production__title">Процесс производства</h2>
+          <video class="production__video" poster="img/video-mobile@1x.jpg" width="260" height="150">
+            <source src="#" type="video/mp4">
           </video>
-          <div class="production__wrapper">
-            <p class="production__text">
-              По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-            </p>
-            <a class="production__order" href="#">Сделать заказ</a>
-          </div>
+          <p class="production__text">
+            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+          </p>
+          <a class="production__order" href="#">Сделать заказ</a>
         </div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <p class="social">
-        <ul class="social__list">
-          <li class="social__list-item"><a class="social-link  social-link--instagram" href="#" target="_blank">Instagram</a></li>
-          <li class="social__list-item"><a class="social-link  social-link--facebook" href="#" target="_blank">Facebook</a></li>
-          <li class="social__list-item"><a class="social-link  social-link--twitter" href="#" target="_blank">Twitter</a></li>
+      <div class="page-footer__wrapper">
+        <a href="index.html"><img class="page-footer__logo" src="img/logo-mobile.svg" width="102" height="34" alt="Mishka"></a>
+        <ul class="page-footer__social">
+          <li class="page-footer__social-item"><a class="social-link  social-link--instagram" href="#" target="_blank">Instagram</a></li>
+          <li class="page-footer__social-item"><a class="social-link  social-link--facebook" href="#" target="_blank">Facebook</a></li>
+          <li class="page-footer__social-item"><a class="social-link  social-link--twitter" href="#" target="_blank">Twitter</a></li>
         </ul>
-      </p>
-      <p class="copyright">
-        Разработано: <a class="copyright__link" href="https://www.htmlacademy.ru"><img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy" title="HTML Academy"></a>
-      </p>
+        <p class="page-footer__copyright">
+          Разработано <a class="page-footer__copyright-link" href="https://www.htmlacademy.ru"><img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy" title="HTML Academy"></a>
+        </p>
+      </div>
     </footer>
 
     <!-- modal -->
     <section class="add-to-cart">
-      <h3 class="add-to-cart__title">Добавить в корзину</h3>
-      <p class="add-to-cart__size">Выберите размер</p>
-      <form class="add-to-cart-form" action="#" method="get">
-        <input type="radio" name="add-size" value="S" id="radio-1" checked>
-        <label for="radio-1">S</label>
-        <input type="radio" name="add-size" value="M" id="radio-2">
-        <label for="radio-2">M</label>
-        <input type="radio" name="add-size" value="L" id="radio-3">
-        <label for="radio-3">L</label>
-        <button>Добавить</button>
-      </form>
+      <div class="add-to-cart__wrapper">
+        <h3 class="add-to-cart__title">Добавить в корзину</h3>
+        <p class="add-to-cart__size">Выберите размер</p>
+        <form class="add-to-cart-form" action="#" method="get">
+          <input type="radio" name="add-size" value="S" id="radio-1" checked>
+          <label for="radio-1">S</label>
+          <input type="radio" name="add-size" value="M" id="radio-2">
+          <label for="radio-2">M</label>
+          <input type="radio" name="add-size" value="L" id="radio-3">
+          <label for="radio-3">L</label>
+          <button class="add-to-cart__button">Добавить</button>
+        </form>
+      </div>
     </section>
   </body>
 </html>

@@ -1,0 +1,100 @@
+.title {
+  background-color: $title_background;
+  border-top: 1px solid $title_border;
+}
+
+.title-text {
+  margin: 0 auto;
+  @include wrapper;
+  text-align: center;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.title-text__bg {
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 128px;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  @include tablet {
+    width: 400px;
+    padding-top: 70px;
+    padding-bottom: 180px;
+  }
+
+  @include desktop {
+    width: 400px;
+    padding-top: 70px;
+    padding-bottom: 180px;
+  }
+}
+
+.title-menu__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  @include wrapper_wide;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+  }
+
+  @include desktop {
+    flex-direction: row;
+  }
+}
+
+.title-menu__list-item {
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 35px;
+  padding-right: 180px;
+  padding-left: 30px;
+  background-repeat: no-repeat;
+
+  // Need to fix this later
+  @include tablet {
+    width: 668px;
+  }
+
+  @include desktop {
+    width: 1050px;
+  }
+}
+
+.title-menu__list--interior {
+  background-color: $accent_color;
+  background-image: url("../img/icon-interior.svg");
+  background-position: 243px center;
+
+  @include desktop {
+    background-position: 430px center;
+  }
+}
+
+.title-menu__list--toys {
+  background-color: $accent_color2;
+  background-image: url("../img/icon-toy.svg");
+  background-position: 233px center;
+
+  @include desktop {
+    background-position: 420px center;
+  }
+}
+
+.title-menu__list-item a {
+  color: #ffffff;
+  text-decoration: none;
+}

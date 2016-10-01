@@ -1,22 +1,26 @@
 $font-stack: "Open Sans";
+$sans-serif-stack: $font-stack, "Arial", sans-serif;
+
+$regular: 400;
+$bold: 700;
 
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensans.woff") format("woff"),
   url("../fonts/opensans.woff2") format("woff2");
-  font-weight: 400;
+  font-weight: $regular;
 }
 
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensansbold.woff") format("woff"),
   url("../fonts/opensansbold.woff2") format("woff2");
-  font-weight: 700;
+  font-weight: $bold;
 }
 
 html,
 body {
-  font-family: $font-stack, "Arial", sans-serif;
+  font-family: $sans-serif-stack;
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
