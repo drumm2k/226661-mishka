@@ -1,9 +1,9 @@
-.title-menu__wrapper {
+.title {
   background-color: $title_background;
   border-top: 1px solid $title_border;
 }
 
-.title-menu__text {
+.title-text {
   margin: 0 auto;
   @include wrapper;
   text-align: center;
@@ -14,7 +14,7 @@
   padding-bottom: 70px;
 }
 
-.title-menu__bg {
+.title-text__bg {
   width: 260px;
   margin: 0 auto;
   padding-top: 70px;
