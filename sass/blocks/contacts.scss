@@ -3,7 +3,7 @@
 }
 
 .contacts {
-  margin-top: 160px;
+  margin-top: 87px;
   position: relative;
 }
 
@@ -11,7 +11,7 @@
   margin: 0;
   font-size: 18px;
   line-height: 30px;
-  font-weight: 700;
+  font-weight: $bold;
 
   @include desktop {
     margin-top: 75px;
@@ -20,6 +20,9 @@
 }
 
 .contacts__table {
+  font-size: 15px;
+  line-height: 30px;
+
   @include desktop {
     margin-top: 65px;
     margin-left: 175px;
@@ -35,8 +38,10 @@
 }
 
 .contacts__table-field {
-  width: 40%;
+  width: 77px;
   vertical-align: top;
+  padding-top: 25px;
+  padding-bottom: 5px;
 
   @include tablet {
     width: 200px;
@@ -49,6 +54,8 @@
 
 .contacts__table-value {
   vertical-align: top;
+  padding-top: 25px;
+  padding-bottom: 5px;
 
     @include tablet {
     width: 240px;
@@ -60,30 +67,11 @@
     }
 }
 
-.map {
-  @include desktop {
-    position: absolute;
-    left: 50%;
-    bottom: 0px;
-    z-index: 999;
-  }
-}
-
-.map__image {
-  margin: 0 auto;
-  display: block;
-
-  @include desktop {
-    width: 525px;
-    height: 427px;
-  }
-}
-
 .contacts__writeus {
   display: block;
   font-size: 18px;
   line-height: 16px;
-  font-weight: 700;
+  font-weight: $bold;
   text-transform: uppercase;
   text-align: center;
   color: $text_color;
@@ -92,8 +80,7 @@
   margin-right: auto;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-bottom: 35px;
-  margin-top: 35px;
+  margin-top: 40px;
   border: 2px solid $button_border;
   background: none;
 

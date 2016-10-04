@@ -1,0 +1,19 @@
+.map {
+  margin-top: 33px;
+  @include desktop {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    z-index: 999;
+  }
+}
+
+.map__image {
+  margin: 0 auto;
+  display: block;
+
+  @include desktop {
+    width: 525px;
+    height: 427px;
+  }
+}

@@ -1,4 +1,10 @@
+.page-header {
+    min-height: 79px;
+    border-top: 1px solid $main_nav_divider;
+}
+
 .page-header__wrapper {
   @include wrapper_wide;
   position: relative;
+
 }

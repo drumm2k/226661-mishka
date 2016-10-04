@@ -1,5 +1,6 @@
 .week-product__wrapper {
   @include wrapper;
+  margin-bottom: 40px;
 
   @include tablet {
     position: relative;
@@ -10,13 +11,14 @@
 }
 
 .week-product {
-  margin-top: 33px;
+  margin-top: 28px;
+  margin-bottom: 20px;
 }
 
 .week-product__name {
   font-size: 25px;
   line-height: 30px;
-  font-weight: 700;
+  font-weight: $bold;
   margin: 0;
 
   @include desktop {
@@ -28,10 +30,11 @@
 .week-product__title {
   font-size: 17px;
   line-height: 16px;
-  font-weight: 700;
+  font-weight: $bold;
   color: $accent_color;
-  padding-top: 14px;
   margin: 0;
+  padding: 0;
+  margin-top: 7px;
   text-transform: uppercase;
 
   @include tablet {
@@ -54,6 +57,8 @@
   font-size: 15px;
   line-height: 24px;
   color: $text_color;
+  margin-top: 24px;
+  margin-bottom: 16px;
 
   @include tablet {
     width: 260px;
@@ -89,11 +94,11 @@
 }
 
 .week-product td {
-  padding: 14px 0;
+  padding: 10px 0;
 }
 
 .week-product td:nth-child(1) {
-  width: 40%;
+  width: 97px;
 }
 .week-product td:nth-last-child(1) {
   width: auto;
@@ -123,7 +128,7 @@
 .week-product__price {
   font-size: 17px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: $bold;
   text-align: center;
   color: $text_color;
   order:0;
@@ -143,12 +148,13 @@
   display: block;
   font-size: 18px;
   line-height: 16px;
-  font-weight: 700;
+  font-weight: $bold;
   text-transform: uppercase;
   text-align: center;
   color: $text_color;
   width: 256px;
   margin: 0 auto;
+  margin-top: 27px;
   padding-top: 15px;
   padding-bottom: 15px;
   border: 2px solid $button_border;

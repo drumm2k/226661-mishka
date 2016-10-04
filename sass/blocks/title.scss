@@ -9,7 +9,7 @@
   text-align: center;
   font-size: 27px;
   line-height: 30px;
-  font-weight: 700;
+  font-weight: $bold;
   padding-top: 70px;
   padding-bottom: 70px;
 }
@@ -18,7 +18,7 @@
   width: 260px;
   margin: 0 auto;
   padding-top: 70px;
-  padding-bottom: 128px;
+  padding-bottom: 123px;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
@@ -56,13 +56,14 @@
 .title-menu__list-item {
   font-size: 19px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: $bold;
   display: block;
   padding-top: 25px;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
   padding-right: 180px;
   padding-left: 30px;
   background-repeat: no-repeat;
+
 
   // Need to fix this later
   @include tablet {
@@ -82,6 +83,10 @@
   @include desktop {
     background-position: 430px center;
   }
+}
+
+.title-menu__list--interior:hover {
+  padding-bottom: 35px;
 }
 
 .title-menu__list--toys {

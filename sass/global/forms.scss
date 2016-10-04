@@ -2,7 +2,7 @@ button {
   display: block;
   font-size: 18px;
   line-height: 16px;
-  font-weight: 700;
+  font-weight: $bold;
   text-transform: uppercase;
   color: $button_color;
   width: 230px;

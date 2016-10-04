@@ -1,7 +1,31 @@
+.main-nav {
+  position: relative;
+
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .main-nav__logo {
   height: 35px;
   display: block;
   margin: 22px auto;
+}
+
+.main-nav__logo:hover {
+  opacity: 0.6;
+}
+
+.main-nav__logo:active {
+  opacity: 0.3;
 }
 
 .main-nav__toggle {
@@ -25,20 +49,6 @@
   }
 }
 
-.main-nav {
-  @include tablet {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  @include desktop {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
-
 .main-nav__list {
   list-style: none;
   margin: 0;
@@ -59,7 +69,7 @@
 .main-nav__list-item {
   font-size: 17px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: $bold;
   padding-top: 33px;
   padding-bottom: 30px;
   padding-left: 75px;
@@ -100,6 +110,13 @@
 }
 
 .main-nav__menu {
+  display: none;
+
+  @include tablet {
+    display: flex;
+    order: 2;
+  }
+
   @include desktop {
     display: flex;
     order: -1;
@@ -107,6 +124,8 @@
 }
 
 .main-nav__cart {
+  display: none;
+
   @include tablet {
     display: flex;
     order: 1;
@@ -157,8 +176,16 @@
   }
 }
 
-.main-nav__list-item a, .main-nav__cart-item a, .main-nav__special-item a {
-  color: #000000;
+.main-nav__list-item a {
+  color: $nav_link;
+}
+
+.main-nav__list-item a:hover {
+  opacity: 0.6;
+}
+
+.main-nav__list-item a:active {
+  opacity: 0.3;
 }
 
 .main-nav__delivery {
@@ -174,5 +201,30 @@
     display: flex;
     align-items: center;
     order: 3;
+  }
+}
+
+
+
+.main-nav--closed .main-nav__toggle:active::before {
+
+}
+
+.main-nav--opened {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 10;
+}
+
+.main-nav--opened {
+  .main-nav__menu {
+    display: block;
+  }
+
+  .main-nav__cart {
+    display: block;
   }
 }
