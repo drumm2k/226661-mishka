@@ -11,8 +11,16 @@
 }
 
 .week-product {
-  margin-top: 28px;
+  margin-top: 27px;
   margin-bottom: 20px;
+
+  @include tablet {
+    margin-top: 45px;
+  }
+
+  @include desktop {
+    margin-top: 125px;
+  }
 }
 
 .week-product__name {
@@ -21,9 +29,18 @@
   font-weight: $bold;
   margin: 0;
 
+  @include tablet {
+    font-size: 43px;
+    line-height: 50px;
+    margin-left: -5px;
+  }
+
   @include desktop {
-    margin-top: 50px;
-    margin-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
+    margin-left: 173px;
+    z-index: 5;
+    position: absolute;
   }
 }
 
@@ -43,13 +60,15 @@
     top: 5px;
     right: 28px;
     width: 70px;
+    text-align: center;
   }
   @include desktop {
     padding-top: 0;
     position: absolute;
     width: 70px;
     left: 50px;
-    top: 50px;
+    top: 8px;
+    text-align: center;
   }
 }
 
@@ -61,12 +80,16 @@
   margin-bottom: 16px;
 
   @include tablet {
-    width: 260px;
+    font-size: 17px;
+    line-height: 30px;
+    width: 300px;
     margin-top: 50px;
   }
   @include desktop {
-    width: 260px;
-    margin-top: 55px;
+    font-size: 17px;
+    line-height: 30px;
+    width: 300px;
+    padding-top: 105px;
     margin-left: 175px;
   }
 }
@@ -80,11 +103,11 @@
 
   @include tablet {
     width: 290px;
-    margin-top: 50px;
+    margin-top: 33px;
   }
   @include desktop {
     width: 290px;
-    margin-top: 67px;
+    margin-top: 47px;
     margin-left: 175px;
   }
 }
@@ -121,7 +144,8 @@
     position: absolute;
     width: 50%;
     right: 0;
-    top: 0;
+    top: -52px;
+    z-index: 1;
   }
 }
 
@@ -134,11 +158,13 @@
   order:0;
 
   @include tablet {
-    width: 50%;
-    margin-top: 60px;
+    font-size: 20px;
+    width: 295px;
+    margin-top: 54px;
   }
   @include desktop {
-    width: 290px;
+    font-size: 20px;
+    width: 305px;
     margin-top: 110px;
     margin-left: 175px;
   }
@@ -146,7 +172,7 @@
 
 .week-product__order {
   display: block;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 16px;
   font-weight: $bold;
   text-transform: uppercase;
@@ -154,9 +180,9 @@
   color: $text_color;
   width: 256px;
   margin: 0 auto;
-  margin-top: 27px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  margin-top: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border: 2px solid $button_border;
   background: none;
 
@@ -167,7 +193,7 @@
   }
   @include desktop {
     margin-left: 175px;
-    margin-top: 34px;
+    margin-top: 32px;
     width: 288px;
   }
 }

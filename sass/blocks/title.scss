@@ -1,6 +1,14 @@
 .title {
   background-color: $title_background;
   border-top: 1px solid $title_border;
+
+  @include tablet {
+    border: none;
+  }
+
+  @include desktop {
+    border: none;
+  }
 }
 
 .title-text {
@@ -12,27 +20,49 @@
   font-weight: $bold;
   padding-top: 70px;
   padding-bottom: 70px;
+  width: 244px;
+
+  @include tablet {
+    width: 600px;
+    font-size: 43px;
+    line-height: 50px;
+
+    br {
+    display: none;
+    }
+  }
+
+  @include desktop {
+    width: 800px;
+    font-size: 53px;
+    line-height: 57px;
+
+    br {
+    display: none;
+    }
+  }
 }
 
 .title-text__bg {
-  width: 260px;
   margin: 0 auto;
   padding-top: 70px;
   padding-bottom: 123px;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: 50% -20px;
 
   @include tablet {
-    width: 400px;
-    padding-top: 70px;
-    padding-bottom: 180px;
+    background-size: 1150px 746px;
+    background-position: 50% -75px;
+    padding-top: 79px;
+    padding-bottom: 374px;
   }
 
   @include desktop {
-    width: 400px;
-    padding-top: 70px;
-    padding-bottom: 180px;
+    background-size: 1150px 746px;
+    background-position: 50% -75px;
+    padding-top: 79px;
+    padding-bottom: 360px;
   }
 }
 
@@ -67,10 +97,22 @@
 
   // Need to fix this later
   @include tablet {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 35px;
+
     width: 668px;
   }
 
   @include desktop {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 28px;
+    padding-bottom: 30px;
+    padding-right: 350px;
+    padding-left: 40px;
     width: 1050px;
   }
 }
@@ -80,8 +122,12 @@
   background-image: url("../img/icon-interior.svg");
   background-position: 243px center;
 
+  @include tablet {
+    background-position: 260px center;
+  }
+
   @include desktop {
-    background-position: 430px center;
+    background-position: 450px center;
   }
 }
 
@@ -94,12 +140,16 @@
   background-image: url("../img/icon-toy.svg");
   background-position: 233px center;
 
+  @include tablet {
+    background-position: 240px center;
+  }
+
   @include desktop {
-    background-position: 420px center;
+    background-position: 430px center;
   }
 }
 
 .title-menu__list-item a {
-  color: #ffffff;
+  color: $title_link;
   text-decoration: none;
 }

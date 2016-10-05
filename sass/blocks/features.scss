@@ -5,6 +5,14 @@
 
 .features {
   margin-top: 33px;
+
+  @include tablet {
+    margin-top: 118px;
+  }
+
+  @include desktop {
+    margin-top: 155px;
+  }
 }
 
 .features__title {
@@ -12,8 +20,17 @@
   line-height: 30px;
   font-weight: $bold;
   margin: 0;
+
+  @include tablet {
+    font-size: 43px;
+    line-height: 50px;
+    margin-left: -5px;
+  }
+
   @include desktop {
-    padding-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
+    margin-left: 173px;
   }
 }
 
@@ -29,14 +46,15 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    margin-top: 18px;
   }
   @include desktop {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 175px;
-    padding-right: 175px;
+    margin-left: 175px;
+    margin-right: 175px;
+    margin-top: 18px;
   }
 }
 
@@ -45,13 +63,18 @@
   font-weight: $bold;
   line-height: 20px;
   padding-top: 18px;
+
   @include tablet {
-    width: 40%;
-    padding-right: 40px;
+    font-size: 20px;
+    line-height: 22px;
+    width: 332px;
+    padding-bottom: 28px;
   }
   @include desktop {
-    width: 40%;
-    padding-right: 40px;
+    font-size: 20px;
+    line-height: 22px;
+    width: 350px;
+    padding-bottom: 28px;
   }
 }
 
@@ -65,26 +88,86 @@
   background-position: center;
 }
 
-.features__list-item--flower:before {
-  background-image: url("../img/icon-feature-1.svg");
+.features__list-item--flower {
+  @include tablet {
+    order: 1;
+  }
+
+  @include desktop {
+    order: 1;
+  }
+
+  &:before {
+    background-image: url("../img/icon-feature-1.svg");
+  }
 }
 
-.features__list-item--money:before {
+.features__list-item--money {
+  @include tablet {
+    order: 3;
+  }
+
+  @include desktop {
+    order: 3;
+  }
+
+  &:before {
   background-image: url("../img/icon-feature-3.svg");
+  }
 }
 
-.features__list-item--heart:before {
+.features__list-item--heart {
+  @include tablet {
+    order: 5;
+  }
+
+  @include desktop {
+    order: 5;
+  }
+
+  &:before {
   background-image: url("../img/icon-feature-5.svg");
+  }
 }
 
-.features__list-item--ball:before {
+.features__list-item--ball {
+  @include tablet {
+    order: 2;
+  }
+
+  @include desktop {
+    order: 2;
+  }
+
+  &:before {
   background-image: url("../img/icon-feature-2.svg");
+  }
 }
 
-.features__list-item--rocket:before {
-  background-image: url("../img/icon-feature-4.svg");
+.features__list-item--rocket {
+  @include tablet {
+    order: 4;
+  }
+
+  @include desktop {
+    order: 4;
+  }
+
+  &:before {
+    background-image: url("../img/icon-feature-4.svg");
+  }
 }
 
-.features__list-item--gift:before {
-  background-image: url("../img/icon-feature-6.svg");
+.features__list-item--gift {
+  @include tablet {
+    order: 6;
+  }
+
+  @include desktop {
+    order: 6;
+  }
+
+  &:before {
+    background-image: url("../img/icon-feature-6.svg");
+  }
 }

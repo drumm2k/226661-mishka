@@ -6,7 +6,32 @@
 
 .reviews {
   margin-top: 55px;
+
+  @include tablet {
+    margin-top: 132px;
+  }
+
+  @include desktop {
+    margin-top: 132px;
+  }
 }
+
+/*
+.reviews__wrapper::before {
+  content: "";
+  position: absolute;
+
+  @include tablet {
+    width: 350px;
+    height: 457px;
+    background-image: url("../img/review@1x.jpg");
+    background-size: 350px 457px;
+    background-repeat: no-repeat;
+    left: -77px;
+    top: -50px;
+  }
+}
+*/
 
 .reviews__title {
   font-size: 25px;
@@ -14,8 +39,16 @@
   font-weight: $bold;
   margin: 0;
 
+  @include tablet {
+    font-size: 43px;
+    line-height: 50px;
+    margin-left: -5px;
+  }
+
   @include desktop {
-    margin-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
+    margin-left: 173px;
   }
 }
 
@@ -31,10 +64,21 @@
 
 .reviews__text {
   font-size: 15px;
-  color: $text_color;
   line-height: 30px;
+  color: $text_color;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 24px;
+
+  @include tablet {
+    font-size: 17px;
+    margin-top: 48px;
+  }
+
+  @include desktop {
+    font-size: 17px;
+    margin-top: 48px;
+    width: 800px;
+  }
 }
 
 .reviews__list-item:nth-child(2), .reviews__list-item:nth-child(3) {
@@ -50,11 +94,13 @@
   margin-top: 25px;
 
   @include tablet {
-    margin-top: 50px;
+    font-size: 17px;
+    margin-top: 59px;
   }
 
   @include desktop {
-    margin-top: 50px;
+    font-size: 17px;
+    margin-top: 39px;
   }
 }
 
@@ -64,17 +110,35 @@
   color: $text_color;
   display: block;
   margin-top: 3px;
+
+  @include tablet {
+    font-size: 17px;
+    font-style: normal;
+  }
+
+  @include desktop {
+    font-size: 17px;
+    font-style: normal;
+  }
 }
 
 .reviews__nav {
   display: flex;
   margin-top: 30px;
-  margin-bottom: 39px;
+    margin-bottom: 39px;
+
+  @include tablet {
+    margin-top: 36px;
+  }
+
+  @include desktop {
+    margin-top: 36px;
+  }
 }
 
 .reviews__nav-prev {
   background: none;
-  background-image: url("../img/icon-tick.svg");
+  background-image: url("../img/icon-left-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: 1px solid $reviews_nav_border;
@@ -85,7 +149,7 @@
   @include tablet {
     border: none;
     position: absolute;
-    width: 0px;
+    width: 50px;
     right: 106px;
     bottom: 40px;
   }
@@ -93,7 +157,7 @@
   @include desktop {
     border: none;
     position: absolute;
-    width: 0px;
+    width: 50px;
     right: 106px;
     bottom: 40px;
   }
@@ -102,7 +166,7 @@
 .reviews__nav-next {
   background: none;
   background: none;
-  background-image: url("../img/icon-tick.svg");
+  background-image: url("../img/icon-right-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: 1px solid $reviews_nav_border;
@@ -113,7 +177,7 @@
   @include tablet {
     border: none;
     position: absolute;
-    width: 0px;
+    width: 50px;
     right: 19px;
     bottom: 40px;
   }
@@ -121,7 +185,7 @@
   @include desktop {
     border: none;
     position: absolute;
-    width: 0px;
+    width: 50px;
     right: 19px;
     bottom: 40px;
   }
@@ -137,16 +201,19 @@
   color: $text_color;
   width: 256px;
   margin: 0 auto;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border: 2px solid $button_border;
   background: none;
 
   @include tablet {
+    font-size: 17px;
     position: absolute;
     top: 0;
     right: 0;
+    width: 171px;
   }
+
   @include desktop {
     position: absolute;
     top: 0;

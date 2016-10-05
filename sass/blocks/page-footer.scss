@@ -1,4 +1,6 @@
 .page-footer__wrapper {
+  @include wrapper;
+
   @include tablet {
     display: flex;
     flex-direction: row;
@@ -15,10 +17,21 @@
 }
 
 .page-footer {
-  margin-top: 40px;
+  margin-top: 39px;
   background-color: $footer_background;
   padding-top: 20px;
-  padding-bottom: 20px;
+
+  @include tablet {
+    margin-top: 57px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  @include desktop {
+    margin-top: 105px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
 }
 
 .page-footer__logo {
@@ -27,12 +40,11 @@
 
   @include tablet {
     display: block;
-    margin-left: 50px;
   }
 
   @include desktop{
     display: block;
-    margin-left: 50px;
+    margin-left: 3px;
   }
 }
 
@@ -42,13 +54,24 @@
   padding: 0;
   text-align: center;
   margin-top: 5px;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 150px;
+  width: 148px;
   margin-left: auto;
   margin-right: auto;
+  padding-right: 5px;
+
+  @include tablet {
+    margin-left: 155px;
+    margin-top: 8px;
+  }
+
+  @include desktop {
+    margin-left: 345px;
+    margin-top: 8px;
+  }
 }
 
 .page-footer__social-item {
@@ -69,6 +92,7 @@
 
 .social-link--facebook {
   background-image: url("../img/icon-fb.svg");
+  margin-top: -2px;
 }
 
 .social-link--twitter {
@@ -76,22 +100,23 @@
 }
 
 .page-footer__copyright {
+  display: inline-block;
   text-align: center;
   font-size: 19px;
   line-height: 18px;
   font-weight: $bold;
-  display: block;
   width: 260px;
-  padding-top: 15px;
-  border-top: 1px solid $footer_divider;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 20px;
+  padding-left: 3px;
+  border-top: 1px solid $footer_divider;
 
   @include tablet {
     border-top: none;
     padding: 0;
     margin: 0;
-    margin-right: 50px;
+    margin-top: 5px;
     width: auto;
   }
 
@@ -99,7 +124,19 @@
     border-top: none;
     padding: 0;
     margin: 0;
-    margin-right: 50px;
+    margin-top: 5px;
     width: auto;
   }
+}
+
+.page-footer__copyright-logo {
+  font-size: 0;
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  margin-left: 11px;
+  background-image: url("../img/htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-position: 7px 0;
 }

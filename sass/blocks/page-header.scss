@@ -1,10 +1,38 @@
 .page-header {
-    min-height: 79px;
     border-top: 1px solid $main_nav_divider;
+    min-height: 79px;
+
+    @include tablet {
+      border: none;
+    }
+
+    @include desktop {
+      border: none;
+    }
+}
+
+.page-header::before {
+  @include tablet {
+    content: "";
+    height: 80px;
+    width: 100%;
+    top: 88px;
+    position: absolute;
+    background-color: $title_background;
+    border-top: 1px solid $title_border;
+  }
+  @include desktop {
+    content: "";
+    height: 80px;
+    width: 100%;
+    top: 88px;
+    position: absolute;
+    background-color: $title_background;
+    border-top: 1px solid $title_border;
+  }
 }
 
 .page-header__wrapper {
   @include wrapper_wide;
   position: relative;
-
 }

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -23,7 +24,7 @@
             <li class="main-nav__list-item"><a href="#">Новые поступления</a></li>
             <li class="main-nav__list-item"><a href="#">Распродажа</a></li>
           </ul>
-          <p class="main-nav__delivery">Бесплатная доставка</p>
+          <p class="main-nav__delivery">Бесплатная доставка по России</p>
         </nav>
       </div>
     </header>
@@ -72,12 +73,12 @@
         <div class="features__wrapper">
           <h2 class="features__title">Коротко о нас:</h2>
           <ul class="features__list">
-            <li class="features__list-item  features__list-item--flower">Экологически чистые материалы</li>
-            <li class="features__list-item  features__list-item--money">Скандинавский стиль по российской цене</li>
-            <li class="features__list-item  features__list-item--heart">Увеличивает лайки на фотографиях</li>
-            <li class="features__list-item  features__list-item--ball">Связано вручную с любовью и умилением</li>
-            <li class="features__list-item  features__list-item--rocket">Поддержка отечественного производителя</li>
-            <li class="features__list-item  features__list-item--gift">Поставляется в подарочной упаковке</li>
+            <li class="features__list-item  features__list-item--flower">Экологически<br> чистые материалы</li>
+            <li class="features__list-item  features__list-item--money">Скандинавский стиль<br> по российской цене</li>
+            <li class="features__list-item  features__list-item--heart">Увеличивает лайки<br> на фотографиях</li>
+            <li class="features__list-item  features__list-item--ball">Связано вручную с<br> любовью и умилением</li>
+            <li class="features__list-item  features__list-item--rocket">Поддержка отечественного<br> производителя</li>
+            <li class="features__list-item  features__list-item--gift">Поставляется в<br> подарочной упаковке</li>
           </ul>
         </div>
       </section>
@@ -131,8 +132,7 @@
               <td class="contacts__table-field">адрес:</td>
               <td class="contacts__table-value">
                 г. Санкт-Петербург,<br>
-                ул. Большая<br>
-                Конюшенная,<br>
+                ул. Большая Конюшенная,<br>
                 д. 19/8, офис 101
               </td>
             </tr>
@@ -156,7 +156,7 @@
           <li class="page-footer__social-item"><a class="social-link  social-link--twitter" href="#" target="_blank">Twitter</a></li>
         </ul>
         <p class="page-footer__copyright">
-          Разработано <a class="page-footer__copyright-link" href="https://www.htmlacademy.ru"><img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy" title="HTML Academy"></a>
+          <a class="page-footer__copyright-link" href="https://www.htmlacademy.ru">Разработано <span class="page-footer__copyright-logo">HTML Academy</span></a>
         </p>
       </div>
     </footer>
@@ -178,21 +178,6 @@
       </div>
     </section>
 
-    <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-  </script>
+    <script src="js/toggle.js"></script>
   </body>
 </html>
