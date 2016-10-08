@@ -188,7 +188,7 @@
   height: 52px;
   font-size: 0;
   z-index: 5;
-  
+
   @include tablet {
     border: none;
     position: absolute;
@@ -217,6 +217,7 @@
 .reviews__write {
   @include button;
   font-size: 18px;
+  z-index: 5;
 
   @include tablet {
     font-size: 17px;
