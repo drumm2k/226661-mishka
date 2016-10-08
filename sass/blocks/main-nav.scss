@@ -78,12 +78,31 @@
 }
 
 .main-nav__list-item {
+  border-bottom: 1px solid $main_nav_divider;
+
+  @include tablet {
+    width: 168px;
+    border: none;
+    padding-top: 32px;
+    padding-bottom: 29px;
+  }
+
+  @include desktop {
+    width: 185px;
+    border: none;
+    padding-top: 32px;
+    padding-bottom: 33px;
+  }
+}
+
+.main-nav__link {
+  display: block;
   position: relative;
   font-size: 17px;
   line-height: 24px;
   font-weight: $bold;
   padding-top: 25px;
-  padding-bottom: 29px;
+  padding-bottom: 28px;
   padding-left: 75px;
   border-bottom: 1px solid $main_nav_divider;
 
@@ -92,9 +111,7 @@
     line-height: 24px;
     width: 168px;
     border: none;
-    padding-left: 0;
-    padding-top: 32px;
-    padding-bottom: 29px;
+    padding: 0;
   }
 
   @include desktop {
@@ -103,10 +120,10 @@
     width: 185px;
     padding-left: 0;
     border: none;
-    padding-top: 32px;
-    padding-bottom: 33px;
+    padding: 0;
   }
 }
+
 
 .main-nav__menu .main-nav__list-item {
   @include tablet{
@@ -192,14 +209,23 @@
   }
 
   @include desktop {
-    font-size: 0;
     width: 82px;
     border-left: 1px solid $main_nav_divider;
     border-right: 1px solid $main_nav_divider;
   }
 }
 
-.main-nav__user-search::before {
+.main-nav__user-search .main-nav__link {
+  @include tablet {
+    font-size: 0;
+  }
+
+  @include desktop {
+    font-size: 0;
+  }
+}
+
+.main-nav__user-search .main-nav__link::before {
   content: "";
   position: absolute;
   background-image: url("../img/icon-search.svg");
@@ -210,55 +236,65 @@
   left: 32px;
 
   @include tablet {
-    top: 35px;
-    left: 34px;
+    top: 4px;
+    left: 33px;
   }
 
   @include desktop {
-    top: 36px;
-    left: 33px;
+    top: 4px;
+    left: 31px;
   }
 }
 
 .main-nav__user-cart {
   @include tablet {
-    font-size: 17px;
-    line-height: 24px;
     width: 264px;
-    text-align: right;
     padding-top: 31px;
     padding-bottom: 34px;
   }
 
   @include desktop {
-    font-size: 17px;
-    line-height: 24px;
     width: 229px;
-    text-align: right;
     padding-left: 36px;
     padding-top: 31px;
     padding-right: 0;
   }
 }
 
-.main-nav__user-cart::before {
+.main-nav__user-cart .main-nav__link {
+  @include tablet {
+    font-size: 17px;
+    line-height: 24px;
+    width: auto;
+    text-align: right;
+  }
+
+  @include desktop {
+    font-size: 17px;
+    line-height: 24px;
+    width: auto;
+    text-align: right;
+  }
+}
+
+.main-nav__user-cart .main-nav__link::before {
   content: "";
   position: absolute;
   background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
   width: 21px;
   height: 19px;
-  top: 28px;
+  top: 29px;
   left: 30px;
 
   @include tablet {
-    top: 35px;
-    left: 33px;
+    top: 3px;
+    left: 32px;
   }
 
   @include desktop {
-    top: 34px;
-    left: 32px;
+    top: 4px;
+    left: -5px;
   }
 }
 
