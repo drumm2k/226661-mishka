@@ -1,36 +1,157 @@
-.add-to-cart__wrapper {
-  margin: 0 auto;
+.add-to-cart {
   width: 320px;
+  text-align: center;
   border: 1px solid $add_to_cart_border;
+  box-shadow: 0 5px 10px 0 rgba(#000000, 0.1);
+  position: fixed;
+  display: none;
+  top: 50%;
+  left: 50%;
+  z-index: 199;
+  background: $ac_background;
+  margin-top: -160px;
+  margin-left: -160px;
 
   @include tablet {
     width: 566px;
+    margin-left: -285px;
   }
 
   @include desktop {
     width: 566px;
+    margin-left: -285px;
   }
 }
 
-.add-to-cart {
-  text-align: center;
+.add-to-cart--open {
+  display: block;
 }
 
 .add-to-cart__title {
   font-size: 25px;
   line-height: 30px;
   font-weight: $bold;
+  text-transform: uppercase;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  margin-bottom: 12px;
+
+  @include tablet {
+    font-size: 30px;
+    line-height: 57px;
+    width: auto;
+    padding-top: 3px;
+  }
+
+  @include desktop {
+    font-size: 30px;
+    line-height: 57px;
+    width: auto;
+    padding-top: 3px;
+  }
 }
 
-.add-to-cart__size {
+.add-to-cart__description {
+  display: block;
   font-size: 15px;
   line-height: 30px;
   color: $text_color;
+  margin-bottom: 23px;
+
+  @include tablet {
+    font-size: 17px;
+  }
+
+  @include desktop {
+    font-size: 17px;
+  }
+}
+
+.add-to-cart__form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include tablet {
+    width: 350px;
+  }
+
+  @include desktop {
+    width: 350px;
+  }
+}
+
+.add-to-cart__form input[type="radio"] {
+  display: none;
+}
+
+.add-to-cart__label {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: $bold;
+  text-align: center;
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: 2px solid $ac_radio_border;
+  width: 78px;
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid $ac_radio_border_hover;
+  }
+
+  &:active {
+    border: 2px solid $ac_radio_border_active;
+  }
+
+  @include tablet {
+    width: 110px;
+  }
+
+  @include desktop {
+    width: 110px;
+  }
+}
+
+input[type="radio"]:checked + .add-to-cart__label {
+  border-color: $ac_radio_border_active;
 }
 
 .add-to-cart__button {
+  display: block;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: $bold;
+  text-transform: uppercase;
+  color: $ac_button_text;
+  width: 264px;
+  padding: 18px;
+  background-color: $ac_button_background;
+  border: none;
+  cursor: pointer;
   margin-left: auto;
   margin-right: auto;
   margin-top: 31px;
   margin-bottom: 46px;
+
+  @include tablet {
+    width: 350px;
+  }
+
+  @include desktop {
+    width: 350px;
+  }
+
+  &:hover {
+    background-color: $ac_button_hover;
+  }
+
+  &:active {
+    opacity: 0.9;
+  }
 }

@@ -5,7 +5,7 @@
 
   @include tablet {
     flex-direction: row;
-    flex-grow: 1;
+    margin-bottom: 55px;
   }
 }
 
@@ -14,13 +14,35 @@
   height: 195px;
 
   @include tablet {
-    width: 325px;
-    height: auto;
+    width: 333px;
+    height: 333px;
   }
 
   @include desktop {
     width: 315px;
-    height: auto;
+    height: 461px;
+  }
+}
+
+.product__wrapper {
+  flex-grow: 1;
+  border: 1px solid $product_border;
+  padding-top: 12px;
+  padding-left: 27px;
+  padding-right: 27px;
+  padding-bottom: 26px;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7px;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+    padding-bottom: 22px;
   }
 }
 
@@ -28,37 +50,106 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: $bold;
+  margin-bottom: 0;
+
+  @include tablet {
+    font-size: 20px;
+    width: 240px;
+  }
+
+  @include desktop {
+    font-size: 20px;
+    width: 240px;
+  }
+}
+
+.product__title:hover {
+  opacity: 0.6;
+}
+
+.product__title:active {
+  opacity: 0.3;
 }
 
 .product__desc {
   font-size: 13px;
   line-height: 30px;
   color: $text_color;
-}
+  margin-bottom: 19px;
+  margin-top: 5px;
 
-.product__wrapper {
-  flex-grow: 1;
-  border: 1px solid $product_border;
+  @include tablet {
+    font-size: 15px;
+    width: 240px;
+  }
+
+  @include desktop {
+    font-size: 15px;
+    width: 240px;
+  }
 }
 
 .product__wrapper-buy {
   border-top: 1px solid $product_border;
   display: flex;
   justify-content: space-between;
-  margin-left: 20px;
-  margin-right: 20px;
+
+  @include tablet {
+    margin-top: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  @include desktop {
+    margin-top: auto;
+  }
 }
 
 .product__price {
   font-size: 15px;
   line-height: 24px;
   font-weight: $bold;
+  margin-top: 22px;
+
+  @include tablet {
+    font-size: 17px;
+  }
+
+  @include desktop {
+    font-size: 17px;
+  }
 }
 
-.product__buy {
+.product__price:hover {
+  opacity: 0.6;
+}
+
+.product__price:active {
+  opacity: 0.3;
+}
+
+.product__cart {
   font-size: 0px;
-  background-color: grey;
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: right;
   width: 21px;
   height: 19px;
-  margin-top: 5px;
+  margin-top: 23px;
+
+  @include desktop {
+    margin-right: 3px;
+  }
+}
+
+.product:hover {
+  box-shadow: 0px 6px 10px 0 rgba(#000000, 0.1);
+}
+
+.product:active {
+  box-shadow: 0 3px 5px 0 rgba(#000000, 0.1);
+}
+
+.order-form__radio input[type="radio"], .order-form__checkbox input[type="checkbox"] {
+  display: none;
 }

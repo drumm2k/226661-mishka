@@ -1,5 +1,6 @@
 .map {
   margin-top: 8px;
+  margin-bottom: 38px;
 
   @include tablet {
     margin-top: 26px;
@@ -8,7 +9,7 @@
   @include desktop {
     position: absolute;
     left: 50%;
-    bottom: 0px;
+    bottom: -38px;
     z-index: 5;
   }
 }

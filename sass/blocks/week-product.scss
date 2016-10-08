@@ -19,7 +19,7 @@
   }
 
   @include desktop {
-    margin-top: 125px;
+    margin-top: 123px;
   }
 }
 
@@ -66,8 +66,8 @@
     padding-top: 0;
     position: absolute;
     width: 70px;
-    left: 50px;
-    top: 8px;
+    left: 48px;
+    top: 10px;
     text-align: center;
   }
 }
@@ -89,7 +89,7 @@
     font-size: 17px;
     line-height: 30px;
     width: 300px;
-    padding-top: 105px;
+    padding-top: 106px;
     margin-left: 175px;
   }
 }
@@ -164,27 +164,14 @@
   }
   @include desktop {
     font-size: 20px;
-    width: 305px;
-    margin-top: 110px;
+    width: 300px;
+    margin-top: 108px;
     margin-left: 175px;
   }
 }
 
 .week-product__order {
-  display: block;
-  font-size: 17px;
-  line-height: 16px;
-  font-weight: $bold;
-  text-transform: uppercase;
-  text-align: center;
-  color: $text_color;
-  width: 256px;
-  margin: 0 auto;
-  margin-top: 25px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  border: 2px solid $button_border;
-  background: none;
+  @include button;
 
   @include tablet {
     margin-left: 0;
@@ -193,7 +180,7 @@
   }
   @include desktop {
     margin-left: 175px;
-    margin-top: 32px;
+    margin-top: 34px;
     width: 288px;
   }
 }

@@ -22,13 +22,13 @@
   padding-top: 20px;
 
   @include tablet {
-    margin-top: 57px;
+    margin-top: 20px;
     padding-top: 36px;
     padding-bottom: 36px;
   }
 
   @include desktop {
-    margin-top: 105px;
+    margin-top: 20px;
     padding-top: 36px;
     padding-bottom: 36px;
   }
@@ -46,6 +46,14 @@
     display: block;
     margin-left: 3px;
   }
+}
+
+.page-footer__logo:hover {
+  opacity: 0.6;
+}
+
+.page-footer__logo:active {
+  opacity: 0.3;
 }
 
 .page-footer__social {
@@ -105,7 +113,7 @@
   font-size: 19px;
   line-height: 18px;
   font-weight: $bold;
-  width: 260px;
+  width: 250px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 20px;
@@ -127,6 +135,14 @@
     margin-top: 5px;
     width: auto;
   }
+}
+
+.page-footer__copyright:hover {
+  opacity: 0.6;
+}
+
+.page-footer__copyright:active {
+  opacity: 0.3;
 }
 
 .page-footer__copyright-logo {

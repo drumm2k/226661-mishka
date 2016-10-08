@@ -16,28 +16,39 @@
   }
 }
 
-/*
-.reviews__wrapper::before {
-  content: "";
-  position: absolute;
-
+.reviews__wrapper::after {
   @include tablet {
+    content: "";
+    position: absolute;
     width: 350px;
     height: 457px;
     background-image: url("../img/review@1x.jpg");
     background-size: 350px 457px;
     background-repeat: no-repeat;
-    left: -77px;
-    top: -50px;
+    left: -50px;
+    top: -76px;
+  }
+
+  @include desktop {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 457px;
+    background-image: url("../img/review@1x.jpg");
+    background-size: 350px 457px;
+    background-repeat: no-repeat;
+    left: 0px;
+    top: -70px;
   }
 }
-*/
 
 .reviews__title {
+  position: relative;
   font-size: 25px;
   line-height: 30px;
   font-weight: $bold;
   margin: 0;
+  z-index: 1;
 
   @include tablet {
     font-size: 43px;
@@ -56,6 +67,8 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  position: relative;
+  z-index: 1;
 
   @include desktop {
     margin-left: 175px;
@@ -125,7 +138,7 @@
 .reviews__nav {
   display: flex;
   margin-top: 30px;
-    margin-bottom: 39px;
+  margin-bottom: 39px;
 
   @include tablet {
     margin-top: 36px;
@@ -145,6 +158,7 @@
   width: 50%;
   height: 52px;
   font-size: 0;
+  z-index: 5;
 
   @include tablet {
     border: none;
@@ -173,7 +187,8 @@
   width: 50%;
   height: 52px;
   font-size: 0;
-
+  z-index: 5;
+  
   @include tablet {
     border: none;
     position: absolute;
@@ -191,32 +206,31 @@
   }
 }
 
+.reviews__nav-prev:hover, .reviews__nav-next:hover {
+  opacity: 0.6;
+}
+
+.reviews__nav-prev:active, .reviews__nav-next:active {
+  opacity: 0.3;
+}
+
 .reviews__write {
-  display: block;
+  @include button;
   font-size: 18px;
-  line-height: 16px;
-  font-weight: $bold;
-  text-transform: uppercase;
-  text-align: center;
-  color: $text_color;
-  width: 256px;
-  margin: 0 auto;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  border: 2px solid $button_border;
-  background: none;
 
   @include tablet {
     font-size: 17px;
     position: absolute;
-    top: 0;
+    top: -23px;
     right: 0;
     width: 171px;
   }
 
   @include desktop {
+    font-size: 17px;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -17px;
+    right: 0px;
+    width: 171px;
   }
 }

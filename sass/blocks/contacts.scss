@@ -4,18 +4,22 @@
 
 .contacts {
   margin-top: 87px;
+  margin-bottom: 39px;
 
   @include tablet {
     margin-top: 155px;
+    margin-bottom: 58px;
   }
 
   @include desktop {
     margin-top: 290px;
+    margin-bottom: 105px;
     position: relative;
   }
 }
 
 .contacts__title {
+  position: relative;
   margin: 0;
   font-size: 18px;
   line-height: 30px;
@@ -32,6 +36,28 @@
     font-size: 53px;
     line-height: 57px;
     margin-left: 173px;
+  }
+}
+
+.contacts__title::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-flag.svg");
+  background-repeat: no-repeat;
+  width: 47px;
+  height: 82px;
+  display: none;
+
+  @include tablet {
+    display: block;
+    top: -16px;
+    right: 3px;
+  }
+
+  @include desktop {
+    display: block;
+    top: -8px;
+    left: -110px;
   }
 }
 
@@ -74,21 +100,8 @@
 }
 
 .contacts__writeus {
-  display: block;
+  @include button;
   font-size: 18px;
-  line-height: 16px;
-  font-weight: $bold;
-  text-transform: uppercase;
-  text-align: center;
-  color: $text_color;
-  width: 256px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  margin-top: 38px;
-  border: 2px solid $button_border;
-  background: none;
 
   @include tablet {
     font-size: 17px;

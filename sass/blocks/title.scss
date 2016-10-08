@@ -3,153 +3,36 @@
   border-top: 1px solid $title_border;
 
   @include tablet {
-    border: none;
+    margin-top: -71px;
   }
 
   @include desktop {
-    border: none;
+    margin-top: -75px;
   }
 }
 
 .title-text {
-  margin: 0 auto;
-  @include wrapper;
-  text-align: center;
   font-size: 27px;
   line-height: 30px;
   font-weight: $bold;
-  padding-top: 70px;
-  padding-bottom: 70px;
-  width: 244px;
-
-  @include tablet {
-    width: 600px;
-    font-size: 43px;
-    line-height: 50px;
-
-    br {
-    display: none;
-    }
-  }
-
-  @include desktop {
-    width: 800px;
-    font-size: 53px;
-    line-height: 57px;
-
-    br {
-    display: none;
-    }
-  }
-}
-
-.title-text__bg {
+  text-align: center;
   margin: 0 auto;
   padding-top: 70px;
-  padding-bottom: 123px;
-  background-image: url("../img/hero-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% -20px;
+  padding-bottom: 75px;
 
   @include tablet {
-    background-size: 1150px 746px;
-    background-position: 50% -75px;
-    padding-top: 79px;
-    padding-bottom: 374px;
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 93px;
+    padding-bottom: 80px;
+    padding-left: 3px;
   }
 
   @include desktop {
-    background-size: 1150px 746px;
-    background-position: 50% -75px;
-    padding-top: 79px;
-    padding-bottom: 360px;
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 93px;
+    padding-bottom: 80px;
+    padding-left: 3px;
   }
-}
-
-.title-menu__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  @include wrapper_wide;
-  display: flex;
-  flex-direction: column;
-
-  @include tablet {
-    flex-direction: row;
-  }
-
-  @include desktop {
-    flex-direction: row;
-  }
-}
-
-.title-menu__list-item {
-  font-size: 19px;
-  line-height: 24px;
-  font-weight: $bold;
-  display: block;
-  padding-top: 25px;
-  padding-bottom: 30px;
-  padding-right: 180px;
-  padding-left: 30px;
-  background-repeat: no-repeat;
-
-
-  // Need to fix this later
-  @include tablet {
-    font-size: 20px;
-    line-height: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 35px;
-
-    width: 668px;
-  }
-
-  @include desktop {
-    font-size: 20px;
-    line-height: 30px;
-    padding-top: 28px;
-    padding-bottom: 30px;
-    padding-right: 350px;
-    padding-left: 40px;
-    width: 1050px;
-  }
-}
-
-.title-menu__list--interior {
-  background-color: $accent_color;
-  background-image: url("../img/icon-interior.svg");
-  background-position: 243px center;
-
-  @include tablet {
-    background-position: 260px center;
-  }
-
-  @include desktop {
-    background-position: 450px center;
-  }
-}
-
-.title-menu__list--interior:hover {
-  padding-bottom: 35px;
-}
-
-.title-menu__list--toys {
-  background-color: $accent_color2;
-  background-image: url("../img/icon-toy.svg");
-  background-position: 233px center;
-
-  @include tablet {
-    background-position: 240px center;
-  }
-
-  @include desktop {
-    background-position: 430px center;
-  }
-}
-
-.title-menu__list-item a {
-  color: $title_link;
-  text-decoration: none;
 }

@@ -1,17 +1,3 @@
-button {
-  display: block;
-  font-size: 18px;
-  line-height: 16px;
-  font-weight: $bold;
-  text-transform: uppercase;
-  color: $button_color;
-  width: 230px;
-  padding: 16px;
-  background-color: $accent_color;
-  border: none;
-  cursor: pointer;
-}
-
 button:focus {
   outline: none;
 }
@@ -31,7 +17,20 @@ textarea {
   border: none;
 
   @include tablet {
+    font-size: 19px;
+    padding-left: 15px;
     width: 100%;
+  }
+
+  @include desktop {
+    font-size: 19px;
+    padding-left: 15px;
+    width: 100%;
+  }
+
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid $forms_border;
   }
 }
 
@@ -41,9 +40,64 @@ input[type="email"] {
   padding-top: 5px;
   padding-bottom: 15px;
   border-bottom: 2px solid $forms_border;
+
+  @include tablet {
+    padding-bottom: 20px;
+  }
+
+  @include desktop {
+    padding-bottom: 20px;
+  }
+
+  &:hover, &:focus {
+    border-bottom: 2px solid $forms_border_focus;
+  }
+
+  &:invalid:focus {
+    border-bottom: 2px solid $forms_border_error;
+  }
+}
+
+input[type="tel"],
+input[type="email"] {
+  @include tablet {
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+
+  @include desktop {
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
 }
 
 textarea {
+  height: 143px;
   border: 2px solid $forms_border;
   padding: 15px;
+
+  &:hover, &:focus {
+    border: 2px solid $forms_border_focus;
+  }
+
+  &:invalid:focus {
+    border: 2px solid $forms_border_error;
+  }
+}
+
+a[href^=mailto] {
+  border-bottom: 1px solid $email_underline;
+  padding-bottom: 4px;
+
+  &:hover {
+    color: $email_hover;
+    border-bottom: 1px solid $email_hover;
+    padding-bottom: 4px;
+  }
+
+  &:active {
+    color: $email_active;
+    border-bottom: 1px solid $email_underline_active;
+    padding-bottom: 4px;
+  }
 }

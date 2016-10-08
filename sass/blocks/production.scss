@@ -1,40 +1,109 @@
 .production {
   @include wrapper;
   margin-top: 30px;
-  border: 1px solid $product_border;
+  margin-bottom: 57px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @include tablet {
+    margin-top: -3px;
+    margin-bottom: 63px;
+  }
+
+  @include desktop {
+    margin-top: 27px;
+    margin-bottom: 105px;
+  }
+}
+
+.production:hover {
+  box-shadow: 0px 6px 10px 0 rgba(#000000, .1);
+}
+
+.production:active {
+  box-shadow: 0 3px 5px 0 rgba(#000000, .1);
 }
 
 .production__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
   @include desktop {
     position: relative;
     width: 368px;
-    min-height: 382px;
     padding-left: 682px;
   }
 }
 
+.production__wrapper-bordertop {
+  border: 1px solid $product_border;
+  border-bottom: none;
+}
+
+.production__wrapper-borderbottom {
+  border: 1px solid $product_border;
+  border-top: none;
+}
+
 .production__title {
+  position: relative;
   font-size: 17px;
   line-height: 24px;
   font-weight: $bold;
-  @include desktop {
+  padding-left: 90px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
+  @include tablet {
+    font-size: 20px;
+    padding-left: 104px;
+    padding-top: 22px;
+    margin-bottom: 7px;
+  }
+
+  @include desktop {
+    font-size: 20px;
+    padding-left: 80px;
+    padding-top: 80px;
+    width: 220px;
+  }
+}
+
+.production__title::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-video.svg");
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  top: 16px;
+  left: 34px;
+
+  @include tablet {
+    top: 17px;
+    left: 41px;
+  }
+
+  @include desktop {
+    top: 24px;
+    left: 81px;
   }
 }
 
 .production__video {
+  display: block;
+  width: 260px;
+  height: 150px;
+
   @include tablet {
     width: 668px;
-    height: auto;
+    height: 455px;
+    background: black;
     order: -1;
   }
+
   @include desktop {
-    width: 662px;
-    height: auto;
+    width: 682px;
+    height: 455px;
+    background: black;
     position: absolute;
     left: 0;
     top: 0;
@@ -45,21 +114,48 @@
   font-size: 13px;
   line-height: 24px;
   color: $text_color;
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-top: 13px;
+
+  @include tablet {
+    font-size: 15px;
+    line-height: 30px;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 0px;
+  }
+
+  @include desktop {
+    font-size: 15px;
+    line-height: 30px;
+    padding-left: 80px;
+    padding-right: 38px;
+    padding-top: 0px;
+    margin-top: 5px;
+  }
 }
 
 .production__order {
-  display: block;
-  font-size: 18px;
-  line-height: 16px;
-  font-weight: $bold;
-  text-transform: uppercase;
-  text-align: center;
-  color: $text_color;
+  @include button;
   width: 188px;
-  margin: 0 auto;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  border: 2px solid $button_border;
-  background: none;
   margin-bottom: 33px;
+  margin-top: 25px;
+
+  @include tablet {
+    font-size: 17px;
+    margin-top: 35px;
+    margin-bottom: 45px;
+    margin-left: 40px;
+    margin-right: 42px;
+    width: auto;
+  }
+
+  @include desktop {
+    font-size: 17px;
+    margin-top: 45px;
+    margin-bottom: 60px;
+    width: 226px;
+    margin-left: 80px;
+  }
 }

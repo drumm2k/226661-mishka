@@ -10,15 +10,15 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <nav class="main-nav  main-nav--closed  main-nav--nojs">
-          <a><img class="main-nav__logo" src="img/logo-mobile.svg" alt="Mishka" width="86" height="35"></a>
+          <a class="main-nav__logo"><img class="main-nav__logo-img" src="img/logo-mobile.svg" alt="Mishka" width="86" height="35"></a>
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list  main-nav__menu">
             <li class="main-nav__list-item"><a href="catalog.html">Каталог товаров</a></li>
             <li class="main-nav__list-item"><a href="form.html">Вязание на заказ</a></li>
           </ul>
-          <ul class="main-nav__list  main-nav__cart">
-            <li class="main-nav__list-item  main-nav__cart-search"><a href="#">Поиск по сайту</a></li>
-            <li class="main-nav__list-item  main-nav__cart-cart"><a href="#">Корзина: <span class="main-nav__cart-counter">пока пуста</span></a></li>
+          <ul class="main-nav__list  main-nav__user">
+            <li class="main-nav__list-item  main-nav__user-search"><a href="#">Поиск по сайту</a></li>
+            <li class="main-nav__list-item  main-nav__user-cart"><a href="#">Корзина: <span class="main-nav__cart-counter">пока пуста</span></a></li>
           </ul>
           <ul class="main-nav__list  main-nav__special">
             <li class="main-nav__list-item"><a href="#">Новые поступления</a></li>
@@ -30,15 +30,15 @@
     </header>
 
     <main>
-      <header class="title">
-        <h1 class="title-text  title-text__bg">
+      <header class="title-index">
+        <h1 class="title-index__text  title-index__bg">
           Милые штуки<br>
           ручной<br>
           работы для дома
         </h1>
         <ul class="title-menu__list">
-          <li class="title-menu__list-item  title-menu__list--interior"><a href="#">Предметы интерьера</a></li>
-          <li class="title-menu__list-item  title-menu__list--toys"><a href="#">Детские игрушки</a></li>
+            <li class="title-menu__list-item  title-menu__list--interior"><a class="title-menu__link" href="#">Предметы интерьера</a></li>
+            <li class="title-menu__list-item  title-menu__list--toys"><a class="title-menu__link" href="#">Детские игрушки</a></li>
         </ul>
       </header>
 
@@ -65,7 +65,7 @@
           </table>
           <img class="week-product__image" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" width="260" height="315">
           <p class="week-product__price">Цена: <span class="week_product__price-value">990</span> руб.</p>
-          <a class="week-product__order" href="#">Заказать</a>
+          <a class="week-product__order" href="product.html">Заказать</a>
         </div>
       </article>
 
@@ -116,7 +116,7 @@
             <button class="reviews__nav-prev">Назад</button>
             <button class="reviews__nav-next">Вперед</button>
           </div>
-          <a class="reviews__write" href="#">Написать</a>
+          <a class="reviews__write" href="reviews.html">Написать</a>
         </div>
       </section>
 
@@ -142,7 +142,7 @@
           <img class="map__image" src="img/map-mobile@1x.jpg" alt="Карта" width="320" height="457">
         </div>
         <div class="contacts__wrapper">
-          <a class="contacts__writeus" href="#">Напишите нам</a>
+          <a class="contacts__writeus" href="contact.html">Напишите нам</a>
         </div>
       </section>
     </main>
@@ -151,9 +151,9 @@
       <div class="page-footer__wrapper">
         <a href="index.html"><img class="page-footer__logo" src="img/logo-mobile.svg" width="102" height="34" alt="Mishka"></a>
         <ul class="page-footer__social">
-          <li class="page-footer__social-item"><a class="social-link  social-link--instagram" href="#" target="_blank">Instagram</a></li>
-          <li class="page-footer__social-item"><a class="social-link  social-link--facebook" href="#" target="_blank">Facebook</a></li>
-          <li class="page-footer__social-item"><a class="social-link  social-link--twitter" href="#" target="_blank">Twitter</a></li>
+          <li class="page-footer__social-item"><a class="social-link  social-link--instagram" href="www.instagram.com" target="_blank">Instagram</a></li>
+          <li class="page-footer__social-item"><a class="social-link  social-link--facebook" href="www.facebook.com" target="_blank">Facebook</a></li>
+          <li class="page-footer__social-item"><a class="social-link  social-link--twitter" href="www.twitter.com" target="_blank">Twitter</a></li>
         </ul>
         <p class="page-footer__copyright">
           <a class="page-footer__copyright-link" href="https://www.htmlacademy.ru">Разработано <span class="page-footer__copyright-logo">HTML Academy</span></a>
@@ -163,19 +163,19 @@
 
     <!-- modal -->
     <section class="add-to-cart">
-      <div class="add-to-cart__wrapper">
-        <h3 class="add-to-cart__title">Добавить в корзину</h3>
-        <p class="add-to-cart__size">Выберите размер</p>
-        <form class="add-to-cart-form" action="#" method="get">
+      <h3 class="add-to-cart__title">Добавить в корзину</h3>
+      <span class="add-to-cart__description">Выберите размер:</span>
+      <form class="add-to-cart__form" action="#" method="get">
+        <div class="add-to-cart__form-wrapper">
           <input type="radio" name="add-size" value="S" id="radio-1" checked>
-          <label for="radio-1">S</label>
+          <label class="add-to-cart__label" for="radio-1">S</label>
           <input type="radio" name="add-size" value="M" id="radio-2">
-          <label for="radio-2">M</label>
+          <label class="add-to-cart__label" for="radio-2">M</label>
           <input type="radio" name="add-size" value="L" id="radio-3">
-          <label for="radio-3">L</label>
-          <button class="add-to-cart__button">Добавить</button>
-        </form>
-      </div>
+          <label class="add-to-cart__label" for="radio-3">L</label>
+        </div>
+        <button class="add-to-cart__button">Добавить</button>
+      </form>
     </section>
 
     <script src="js/toggle.js"></script>

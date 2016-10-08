@@ -16,9 +16,9 @@
             <li class="main-nav__list-item"><a href="catalog.html">Каталог товаров</a></li>
             <li class="main-nav__list-item"><a href="form.html">Вязание на заказ</a></li>
           </ul>
-          <ul class="main-nav__list  main-nav__cart">
-            <li class="main-nav__list-item  main-nav__cart-search"><a href="#">Поиск по сайту</a></li>
-            <li class="main-nav__list-item  main-nav__cart-cart"><a href="#">Корзина: <span class="main-nav__cart-counter">пока пуста</span></a></li>
+          <ul class="main-nav__list  main-nav__user">
+            <li class="main-nav__list-item  main-nav__user-search"><a href="#">Поиск по сайту</a></li>
+            <li class="main-nav__list-item  main-nav__user-cart"><a href="#">Корзина: <span class="main-nav__cart-counter">пока пуста</span></a></li>
           </ul>
           <ul class="main-nav__list  main-nav__special">
             <li class="main-nav__list-item"><a href="#">Новые поступления</a></li>
@@ -34,64 +34,62 @@
           <h1 class="title-text">Вязание на заказ</h1>
       </header>
       <form class="order-form" action="#" method="get">
-        <p class="order-form__text">
+        <p class="order-form__description">
           Мы будем рады воплотить в жизнь ваши пожелания!
           Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
 
         <div class="order-form__type">
           <div class="order-form__title">Тип</div>
-          <div class="order-form__type-wrapper">
-            <div class="order-form__radio">
-              <input type="radio" name="order-type" id="radio-1" value="accessory" checked>
-              <label for="radio-1">Аксессуар для интерьера</label>
-            </div>
-            <div class="order-form__radio">
-              <input type="radio" name="order-type" id="radio-2" value="toy">
-              <label for="radio-2">Детская игрушка</label>
-            </div>
+          <div class="order-form__radio">
+            <input type="radio" name="order-type" id="radio-1" value="accessory" checked>
+            <label class="order-form__radio-text" for="radio-1">Аксессуар для интерьера</label>
+          </div>
+          <div class="order-form__radio">
+            <input type="radio" name="order-type" id="radio-2" value="toy">
+            <label class="order-form__radio-text" for="radio-2">Детская игрушка</label>
           </div>
         </div>
 
         <div class="order-form__color">
           <div class="order-form__title">Цвет</div>
           <div class="order-form__checkbox">
-            <input type="checkbox" name="color" id="checkbox-1" value="white">
-            <label for="checkbox-1">Белый</label>
+            <input type="checkbox" name="color" id="checkbox-1" value="white" checked>
+            <label class="order-form__color-text" for="checkbox-1">Белый</label>
           </div>
           <div class="order-form__checkbox">
-            <input type="checkbox" name="color" id="checkbox-2" value="gray">
-            <label for="checkbox-2">Серый</label>
+            <input type="checkbox" name="color" id="checkbox-2" value="gray" checked>
+            <label class="order-form__color-text" for="checkbox-2">Серый</label>
           </div>
           <div class="order-form__checkbox">
             <input type="checkbox" name="color" id="checkbox-3" value="tiffany">
-            <label for="checkbox-3">«Тиффани»</label>
+            <label class="order-form__color-text" for="checkbox-3">«Тиффани»</label>
           </div>
           <div class="order-form__checkbox">
             <input type="checkbox" name="color" id="checkbox-4" value="black">
-            <label for="checkbox-4">Черный</label>
+            <label class="order-form__color-text" for="checkbox-4">Черный</label>
           </div>
           <div class="order-form__checkbox">
             <input type="checkbox" name="color" id="checkbox-5" value="pink">
-            <label for="checkbox-5">Розовый</label>
+            <label class="order-form__color-text" for="checkbox-5">Розовый</label>
           </div>
           <div class="order-form__checkbox">
             <input type="checkbox" name="color" id="checkbox-6" value="orange">
-            <label for="checkbox-6">Оранжевый</label>
+            <label class="order-form__color-text" for="checkbox-6">Оранжевый</label>
           </div>
         </div>
 
         <div class="order-form__fullname">
           <div class="order-form__title">ФИО</div>
-          <div class="order-form__text">
+          <div class="order-form__fullname-text">
             <label class="order-form__label" for="order-name">Имя: </label>
             <input type="text" name="order-name" id="order-name" placeholder="Введите ваше имя" required>
           </div>
-          <div class="order-form__text">
+          <div class="order-form__fullname-text">
             <label class="order-form__label" for="order-lastname">Фамилия: </label>
             <input type="text" name="order-lastname" id="order-lastname" placeholder="Укажите фамилию" required>
           </div>
-          <div class="order-form__text">
+          <div class="order-form__fullname-text">
             <label class="order-form__label" for="order-patronymic">Отчество: </label>
             <input type="text" name="order-patronymic" id="order-patronymic" placeholder="Отчество, если желаете">
           </div>
@@ -107,7 +105,7 @@
         <div class="order-form__email">
           <div class="order-form__title">E-mail</div>
           <div class="order-form__text">
-          <input type="email" name="order-email" id="order-email" placeholder="Ваш Email" required>
+            <input type="email" name="order-email" id="order-email" placeholder="Ваш Email" required>
           </div>
         </div>
 
@@ -117,8 +115,8 @@
         </div>
 
         <div class="order-form__send">
-          <p class="order-form__requirement">Все поля обязательны для заполнения</p>
-          <button>Отправить заказ</button>
+          <p class="order-form__requirement">Все поля являются обязательными</p>
+          <button class="order-form__button">Отправить заказ</button>
         </div>
       </form>
     </main>
@@ -127,13 +125,12 @@
       <div class="page-footer__wrapper">
         <a href="index.html"><img class="page-footer__logo" src="img/logo-mobile.svg" width="102" height="34" alt="Mishka"></a>
         <ul class="page-footer__social">
-          <li class="page-footer__social-item"><a class="social-link  social-link--instagram" href="#" target="_blank">Instagram</a></li>
-          <li class="page-footer__social-item"><a class="social-link  social-link--facebook" href="#" target="_blank">Facebook</a></li>
-          <li class="page-footer__social-item"><a class="social-link  social-link--twitter" href="#" target="_blank">Twitter</a></li>
+          <li class="page-footer__social-item"><a class="social-link  social-link--instagram" href="www.instagram.com" target="_blank">Instagram</a></li>
+          <li class="page-footer__social-item"><a class="social-link  social-link--facebook" href="www.facebook.com" target="_blank">Facebook</a></li>
+          <li class="page-footer__social-item"><a class="social-link  social-link--twitter" href="www.twitter.com" target="_blank">Twitter</a></li>
         </ul>
         <p class="page-footer__copyright">
           <a class="page-footer__copyright-link" href="https://www.htmlacademy.ru">Разработано <span class="page-footer__copyright-logo">HTML Academy</span></a>
-        </p>
         </p>
       </div>
     </footer>
