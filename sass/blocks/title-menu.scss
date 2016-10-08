@@ -37,6 +37,7 @@
   padding-bottom: 30px;
   padding-left: 27px;
   padding-right: 120px;
+  color: $title_link;
 
   @include tablet {
     font-size: 20px;
@@ -56,16 +57,12 @@
   }
 }
 
-.title-menu__list-item a {
-  color: $title_link;
-}
-
-.title-menu__list-item:active {
-  //opacity: 0.3;
+.title-menu__list-item a:active {
+  opacity: 0.3;
 }
 
 .title-menu__list-item:hover {
-  transform: translateY(-5px);
+
 }
 
 .title-menu__list--interior {
@@ -80,6 +77,15 @@
   @include desktop {
     background-position: 450px center;
   }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 0 0 $accent_color;
+  }
+
+  &:active {
+
+  }
 }
 
 .title-menu__list--toys {
@@ -93,5 +99,14 @@
 
   @include desktop {
     background-position: 430px center;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 0 0 $accent_color2;
+  }
+
+  &:active {
+
   }
 }

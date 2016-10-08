@@ -194,6 +194,10 @@
   box-shadow: 0 0 0 2px $radio_border_active;
 }
 
+input[type="radio"]:disabled + .order-form__radio-text::after {
+  box-shadow: 0 0 0 2px $forms_border_error;
+}
+
 .order-form__type .order-form__title {
   @include tablet {
     position: absolute;
@@ -325,6 +329,10 @@ input[type="checkbox"]:checked + .order-form__color-text::after {
   background-repeat: no-repeat;
   background-size: 22px 16px;
   background-position: 50% 50%;
+}
+
+input[type="checkbox"]:disabled + .order-form__color-text::after {
+  outline: 2px solid $forms_border_error;
 }
 
 .order-form__color .order-form__title {
@@ -667,137 +675,4 @@ input[type="checkbox"]:checked + .order-form__color-text::after {
 
 input[type="radio"]:checked + .order-form__radio-text::after {
   background-color: $radio_active;
-}
-
-//Other
-button:focus {
-  outline: none;
-}
-
-fieldset {
-  border: none;
-}
-
-input[type="text"],
-input[type="tel"],
-input[type="email"],
-textarea {
-  font-size: 17px;
-  line-height: 18px;
-  width: 100%;
-  box-sizing: border-box;
-  border: none;
-  background-color: transparent;
-
-  @include tablet {
-    font-size: 19px;
-    padding-left: 15px;
-    width: 100%;
-  }
-
-  @include desktop {
-    font-size: 19px;
-    padding-left: 15px;
-    width: 100%;
-  }
-
-  &:focus {
-    outline: none;
-    border-bottom: 2px solid $forms_border;
-  }
-}
-
-input[type="text"],
-input[type="tel"],
-input[type="email"] {
-  padding-top: 5px;
-  padding-bottom: 15px;
-  border-bottom: 2px solid $forms_border;
-
-  @include tablet {
-    padding-bottom: 20px;
-  }
-
-  @include desktop {
-    padding-bottom: 20px;
-  }
-
-  &:hover, &:focus {
-    border-bottom: 2px solid $forms_border_focus;
-  }
-
-  &:invalid:focus {
-    border-bottom: 2px solid $forms_border_error;
-  }
-}
-
-input[type="tel"],
-input[type="email"] {
-  @include tablet {
-    padding-top: 10px;
-    padding-bottom: 15px;
-  }
-
-  @include desktop {
-    padding-top: 10px;
-    padding-bottom: 15px;
-  }
-}
-
-input[type="tel"] {
-  background-image: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;
-  background-position: 97% 0%;
-  @include tablet {
-    background-position: 95% 50%;
-  }
-
-  @include desktop {
-    background-position: 99% 48%;
-  }
-}
-
-input[type="email"] {
-  background-image: url("../img/icon-mail.svg");
-  background-repeat: no-repeat;
-  background-position: 98% 0%;
-
-  @include tablet {
-    background-position: 95% 50%;
-  }
-
-  @include desktop {
-    background-position: 99.5% 65%;
-  }
-}
-
-textarea {
-  height: 143px;
-  border: 2px solid $forms_border;
-  padding: 15px;
-
-  &:hover, &:focus {
-    border: 2px solid $forms_border_focus;
-  }
-
-  &:invalid:focus {
-    border: 2px solid $forms_border_error;
-  }
-}
-
-a[href^=mailto] {
-  border-bottom: 1px solid $email_underline;
-  padding-bottom: 4px;
-
-  &:hover {
-    color: $email_hover;
-    border-bottom: 1px solid $email_hover;
-    padding-bottom: 4px;
-  }
-
-  &:active {
-    color: $email_active;
-    border-bottom: 1px solid $email_underline_active;
-    padding-bottom: 4px;
-  }
 }

@@ -105,17 +105,16 @@
   display: block;
   width: 260px;
   height: 150px;
+  background-color: $production_video_background;
 
   @include tablet {
     width: 668px;
     height: 455px;
-    background: $production_video_background;
   }
 
   @include desktop {
     width: 682px;
     height: 455px;
-    background: $production_video_background;
   }
 }
 
