@@ -15,6 +15,7 @@ textarea {
   width: 100%;
   box-sizing: border-box;
   border: none;
+  background-color: transparent;
 
   @include tablet {
     font-size: 19px;
