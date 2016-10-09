@@ -73,12 +73,12 @@
 
   @include tablet {
     margin-left: 155px;
-    margin-top: 8px;
+    margin-top: 13px;
   }
 
   @include desktop {
     margin-left: 345px;
-    margin-top: 8px;
+    margin-top: 13px;
   }
 }
 
@@ -124,7 +124,7 @@
     border-top: none;
     padding: 0;
     margin: 0;
-    margin-top: 5px;
+    margin-top: 10px;
     width: auto;
   }
 
@@ -132,16 +132,16 @@
     border-top: none;
     padding: 0;
     margin: 0;
-    margin-top: 5px;
+    margin-top: 10px;
     width: auto;
   }
 }
 
-.page-footer__copyright:hover {
+.page-footer__copyright-link:hover {
   opacity: 0.6;
 }
 
-.page-footer__copyright:active {
+.page-footer__copyright-link:active {
   opacity: 0.3;
 }
 
