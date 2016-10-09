@@ -31,24 +31,11 @@
   background-size: 100% 100%;
 
   @include tablet {
-    content: "";
-    position: absolute;
-    z-index: 5;
-    width: 100%;
-    background-repeat: repeat-x;
-    background-image: url("../img/bg-zigzag-line.svg");
     height: 24px;
     bottom: -11px;
-    background-size: 100% 100%;
   }
 
   @include desktop {
-    content: "";
-    position: absolute;
-    z-index: 5;
-    width: 100%;
-    background-repeat: repeat-x;
-    background-image: url("../img/bg-zigzag-line.svg");
     height: 24px;
     bottom: -7px;
   }

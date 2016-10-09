@@ -91,6 +91,7 @@
 .production__video {
   @include tablet {
     order: -1;
+    line-height: 0;
   }
   @include desktop {
     width: 682px;
@@ -161,7 +162,7 @@
   color: $text_color;
   padding-left: 33px;
   padding-right: 33px;
-  padding-top: 13px;
+  padding-top: 7px;
 
   @include tablet {
     font-size: 15px;

@@ -43,7 +43,11 @@
         <div class="catalog__wrapper">
           <div class="product">
             <a class="product__link" href="product.html">
-              <img class="product__image" src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
+              <picture class="product__image">
+                <source media="(min-width:1150px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width:768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик" title="Зайчик-попрыгайчик">
+              </picture>
             </a>
             <div class="product__wrapper">
               <h2 class="product__title">
@@ -59,7 +63,11 @@
 
           <div class="product">
             <a class="product__link" href="product.html">
-              <img class="product__image" src="img/photo-2-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195">
+              <picture class="product__image">
+                <source media="(min-width:1150px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width:768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Корзинка для белья" title="Корзинка для белья">
+              </picture>
             </a>
             <div class="product__wrapper">
               <h2 class="product__title">
@@ -75,7 +83,11 @@
 
           <div class="product">
             <a class="product__link" href="product.html">
-              <img class="product__image" src="img/photo-3-mobile@1x.jpg" alt="Большая корзина для игрушек" width="260" height="195">
+              <picture class="product__image">
+                <source media="(min-width:1150px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width:768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Большая корзина для игрушек" title="Большая корзина для игрушек">
+              </picture>
             </a>
             <div class="product__wrapper">
               <h2 class="product__title">
@@ -96,9 +108,11 @@
           <h2 class="production__title">Процесс производства</h2>
         </div>
         <div class="production__video">
-          <video class="production__video-thumbnail" poster="img/video-mobile@1x.jpg" width="260" height="150">
-            <source src="#" type="video/mp4">
-          </video>
+          <picture class="product__video-thumbnail">
+            <source media="(min-width:1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width:768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Процесс производства" title="Процесс производства">
+          </picture>
           <button class="production__video-play"></button>
         </div>
         <div class="production__wrapper  production__wrapper-borderbottom">
@@ -112,7 +126,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a href="index.html"><img class="page-footer__logo" src="img/logo-footer.svg" width="102" height="34" alt="Mishka"></a>
+        <a href="index.html"><img class="page-footer__logo" src="img/logo-footer.svg" width="102" height="34" alt="Mishka" title="Mishka"></a>
         <ul class="page-footer__social">
           <li class="page-footer__social-item"><a class="social-link  social-link--instagram" href="#" target="_blank">Instagram</a></li>
           <li class="page-footer__social-item"><a class="social-link  social-link--facebook" href="#" target="_blank">Facebook</a></li>
