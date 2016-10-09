@@ -54,8 +54,22 @@ input[type="email"] {
     border-bottom: 2px solid $forms_border_focus;
   }
 
-  &:invalid:focus {
+  &:error {
     border-bottom: 2px solid $forms_border_error;
+  }
+}
+
+textarea {
+  height: 143px;
+  border: 2px solid $forms_border;
+  padding: 15px;
+
+  &:hover, &:focus {
+    border: 2px solid $forms_border_focus;
+  }
+
+  &:error {
+    border: 2px solid $forms_border_error;
   }
 }
 
@@ -96,20 +110,6 @@ input[type="email"] {
 
   @include desktop {
     background-position: 99.5% 65%;
-  }
-}
-
-textarea {
-  height: 143px;
-  border: 2px solid $forms_border;
-  padding: 15px;
-
-  &:hover, &:focus {
-    border: 2px solid $forms_border_focus;
-  }
-
-  &:invalid:focus {
-    border: 2px solid $forms_border_error;
   }
 }
 
