@@ -95,3 +95,13 @@
     color: $button_active;
   }
 }
+
+// ============================
+// mixin for retina
+// ============================
+
+@mixin retina {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @content;
+  }
+}

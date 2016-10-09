@@ -3,6 +3,17 @@ $mobile-width: 767px;
 $tablet-width: 768px;
 $desktop-width: 1150px;
 
+// Fonts
+$font-stack: "Open Sans";
+$font-alt: "Arial";
+$sans-serif-stack: $font-stack, $font-alt, sans-serif;
+$regular: 400;
+$bold: 700;
+
+// Retina
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
 // Text colors
 $text_color: #444444;
 $nav_link: #000000;
