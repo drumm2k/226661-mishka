@@ -1,6 +1,7 @@
 .main-nav {
   position: relative;
-
+  z-index: 50;
+  
   @include tablet {
     display: flex;
     flex-direction: row;
@@ -16,9 +17,22 @@
 
 .main-nav__logo {
   display: block;
+  width: 160px;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
-  min-height: 79px;
+  min-height: 57px;
+  padding-top: 22px;
+
+  @include tablet {
+    text-align: left;
+    width: 120px;
+  }
+
+  @include desktop {
+    padding-top: 9px;
+    margin-right: 50px;
+  }
 
   &:hover {
     opacity: 0.6;
@@ -27,14 +41,6 @@
   &:active {
     opacity: 0.3;
   }
-}
-
-.main-nav__logo-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 22px;
-  padding-bottom: 22px;
 }
 
 .main-nav__toggle {

@@ -10,7 +10,13 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <nav class="main-nav  main-nav--closed  main-nav--nojs">
-          <a href="index.html"><img class="main-nav__logo" src="img/logo-mobile.svg" alt="Mishka" width="86" height="35"></a>
+          <a href="index.html">
+            <picture class="main-nav__logo">
+              <source media="(min-width:1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width:768px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" alt="Mishka" title="Mishka">
+            </picture>
+          </a>
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list  main-nav__menu">
             <li class="main-nav__list-item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
@@ -138,11 +144,11 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a href="index.html"><img class="page-footer__logo" src="img/logo-mobile.svg" width="102" height="34" alt="Mishka"></a>
+        <a href="index.html"><img class="page-footer__logo" src="img/logo-footer.svg" width="102" height="34" alt="Mishka"></a>
         <ul class="page-footer__social">
-          <li class="page-footer__social-item"><a class="social-link  social-link--instagram" href="http://www.instagram.com" target="_blank">Instagram</a></li>
-          <li class="page-footer__social-item"><a class="social-link  social-link--facebook" href="http://www.facebook.com" target="_blank">Facebook</a></li>
-          <li class="page-footer__social-item"><a class="social-link  social-link--twitter" href="http://www.twitter.com" target="_blank">Twitter</a></li>
+          <li class="page-footer__social-item"><a class="social-link  social-link--instagram" href="#" target="_blank">Instagram</a></li>
+          <li class="page-footer__social-item"><a class="social-link  social-link--facebook" href="#" target="_blank">Facebook</a></li>
+          <li class="page-footer__social-item"><a class="social-link  social-link--twitter" href="#" target="_blank">Twitter</a></li>
         </ul>
         <p class="page-footer__copyright">
           <a class="page-footer__copyright-link" href="https://www.htmlacademy.ru">Разработано <span class="page-footer__copyright-logo">HTML Academy</span></a>

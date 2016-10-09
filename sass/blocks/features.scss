@@ -1,17 +1,16 @@
 .features__wrapper {
   @include wrapper;
-  margin-top: 70px;
 }
 
 .features {
-  margin-top: 33px;
+  margin-top: 27px;
 
   @include tablet {
-    margin-top: 118px;
+    margin-top: 56px;
   }
 
   @include desktop {
-    margin-top: 155px;
+    margin-top: 65px;
   }
 }
 

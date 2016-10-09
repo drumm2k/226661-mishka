@@ -17,6 +17,9 @@
 .map__image {
   margin: 0 auto;
   display: block;
+  position: relative;
+  width: 320px;
+  height: 457px;
 
   @include tablet {
     width: 768px;
@@ -26,5 +29,26 @@
   @include desktop {
     width: 525px;
     height: 457px;
+  }
+}
+
+.map__image::after {
+  content: "";
+  position: absolute;
+  top: 165px;
+  left: 124px;
+  width: 66px;
+  height: 101px;
+  background-image: url("../img/icon-map-pin.svg");
+  z-index: 10;
+
+  @include tablet {
+    top: 165px;
+    left: 347px;
+  }
+
+  @include desktop {
+    top: 166px;
+    left: 237px;
   }
 }
