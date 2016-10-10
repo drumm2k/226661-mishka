@@ -54,15 +54,15 @@
 
   @include tablet {
     font-size: 20px;
-    padding-left: 104px;
-    padding-top: 22px;
+    padding-left: 106px;
+    padding-top: 21px;
     margin-bottom: 7px;
   }
 
   @include desktop {
     font-size: 20px;
-    padding-left: 80px;
-    padding-top: 80px;
+    padding-left: 79px;
+    padding-top: 79px;
     width: 220px;
   }
 }
@@ -89,13 +89,15 @@
 }
 
 .production__video {
+  display: block;
+  position: relative;
+  line-height: 0;
+  background-color: $production_video_background;
+
   @include tablet {
     order: -1;
-    line-height: 0;
   }
   @include desktop {
-    width: 682px;
-    height: 455px;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -103,28 +105,26 @@
 }
 
 .production__video-thumbnail {
-  display: block;
   width: 260px;
   height: 150px;
-  background-color: $production_video_background;
 
-  @include tablet {
-    width: 668px;
-    height: 455px;
-  }
+    @include tablet {
+      width: 668px;
+      height: 455px;
+    }
 
-  @include desktop {
-    width: 682px;
-    height: 455px;
-  }
+    @include desktop {
+      width: 682px;
+      height: 455px;
+    }
 }
 
 .production__video-play {
   position: absolute;
   width: 101px;
   height: 78px;
-  top: 50%;
-  left: 50%;
+  top: 26%;
+  left: 31%;
   background-image: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20id%3D%22Laag_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%22100.678px%22%20height%3D%2276.891px%22%20viewBox%3D%22247.3%20382.56%20100.678%2076.891%22%20enable-background%3D%22new%20247.3%20382.56%20100.678%2076.891%22%20xml%3Aspace%3D%22preserve%22%3E%0A%20%20%3Cg%3E%0A%20%20%20%20%3Cg%3E%0A%20%20%20%20%20%20%3Cpath%20fill%3D%22%2363D1BB%22%20d%3D%22M344.255%2C400.708c0%2C0-0.92-7.008-3.785-10.078c-3.632-4.041-7.674-4.066-9.541-4.297%20c-13.326-1.023-33.303-1.023-33.303-1.023h-0.051c0%2C0-19.978%2C0-33.304%2C1.023c-1.867%2C0.23-5.908%2C0.256-9.54%2C4.297%20c-2.84%2C3.096-3.786%2C10.078-3.786%2C10.078s-0.896%2C8.211-0.896%2C16.422v7.699c0%2C8.21%2C0.947%2C16.421%2C0.947%2C16.421%20s0.921%2C7.009%2C3.785%2C10.078c3.632%2C4.041%2C8.364%2C3.913%2C10.487%2C4.349c7.622%2C0.767%2C32.356%2C1.022%2C32.356%2C1.022%20s20.003-0.025%2C33.329-1.048c1.867-0.23%2C5.908-0.256%2C9.54-4.298c2.84-3.069%2C3.786-10.078%2C3.786-10.078s0.946-8.21%2C0.946-16.421%20v-7.699C345.202%2C408.919%2C344.255%2C400.708%2C344.255%2C400.708z%22%2F%3E%0A%20%20%20%20%20%20%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M297.614%2C459.449h-0.016c-1.015-0.011-24.946-0.266-32.604-1.037l-0.14-0.014l-0.137-0.028%20c-0.271-0.056-0.668-0.107-1.126-0.167c-2.503-0.328-7.159-0.938-10.839-5.019c-3.354-3.616-4.377-10.771-4.483-11.576%20l-0.005-0.043c-0.039-0.342-0.965-8.463-0.965-16.736v-7.699c0-8.266%2C0.875-16.378%2C0.912-16.72l0.009-0.071%20c0.108-0.802%2C1.155-7.928%2C4.474-11.557c3.996-4.439%2C8.531-4.899%2C10.712-5.121c0.192-0.02%2C0.37-0.037%2C0.529-0.058l0.126-0.013%20c13.277-1.019%2C33.312-1.031%2C33.514-1.031h0.051c0.201%2C0%2C20.236%2C0.013%2C33.514%2C1.031l0.126%2C0.013%20c0.159%2C0.021%2C0.337%2C0.038%2C0.529%2C0.058c2.179%2C0.221%2C6.71%2C0.682%2C10.704%2C5.112c3.354%2C3.616%2C4.377%2C10.771%2C4.483%2C11.577l0.005%2C0.043%20c0.039%2C0.342%2C0.965%2C8.459%2C0.99%2C16.753v7.708c0%2C8.273-0.926%2C16.395-0.965%2C16.736l-0.007%2C0.053%20c-0.108%2C0.805-1.156%2C7.953-4.478%2C11.562c-3.994%2C4.435-8.527%2C4.896-10.707%2C5.117c-0.193%2C0.02-0.371%2C0.037-0.53%2C0.057l-0.126%2C0.013%20c-13.276%2C1.02-33.334%2C1.057-33.535%2C1.058L297.614%2C459.449L297.614%2C459.449z%20M265.67%2C452.952%20c7.477%2C0.729%2C31.216%2C0.989%2C31.968%2C0.997c0.657-0.001%2C20.135-0.049%2C33.047-1.036c0.178-0.021%2C0.371-0.041%2C0.58-0.062%20c1.836-0.186%2C4.608-0.468%2C7.186-3.335l0.026-0.029c1.825-1.974%2C2.853-6.928%2C3.075-8.552c0.059-0.514%2C0.926-8.358%2C0.926-16.08%20v-7.699c-0.023-7.76-0.896-15.627-0.951-16.109c-0.32-2.382-1.434-6.789-3.066-8.539l-0.035-0.038%20c-2.577-2.868-5.351-3.149-7.186-3.336c-0.209-0.021-0.402-0.041-0.58-0.062c-13.066-0.998-32.834-1.011-33.033-1.011h-0.051%20c-0.198%2C0-19.967%2C0.013-33.033%2C1.011c-0.177%2C0.021-0.371%2C0.041-0.58%2C0.062c-1.835%2C0.187-4.607%2C0.468-7.186%2C3.336l-0.019%2C0.021%20c-1.828%2C1.993-2.855%2C6.924-3.082%2C8.552c-0.062%2C0.591-0.875%2C8.399-0.875%2C16.089v7.699c0%2C7.749%2C0.871%2C15.598%2C0.926%2C16.083%20c0.32%2C2.381%2C1.433%2C6.789%2C3.066%2C8.539l0.035%2C0.039c2.322%2C2.584%2C5.303%2C2.975%2C7.479%2C3.259%20C264.788%2C452.812%2C265.246%2C452.872%2C265.67%2C452.952z%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%3C%2Fg%3E%0A%20%20%3Cg%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23FFFFFF%22%20points%3D%22285.733%2C403.138%20285.733%2C438.846%20315.48%2C420.992%20%09%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A");
   background-repeat: no-repeat;
   background-color: transparent;
@@ -132,17 +132,15 @@
   border: none;
   cursor: pointer;
   z-index: 5;
-  margin-top: -116px;
-  margin-left: -50px;
 
   @include tablet {
-    margin-top: -177px;
-    margin-left: -51px;
+    top: 43%;
+    left: 42.5%;
   }
 
   @include desktop {
-    margin-top: -38px;
-    margin-left: -40px;
+    top: 41%;
+    left: 44.5%;
   }
 
   &:hover {
@@ -162,7 +160,7 @@
   color: $text_color;
   padding-left: 33px;
   padding-right: 33px;
-  padding-top: 7px;
+  padding-top: 13px;
 
   @include tablet {
     font-size: 15px;
@@ -192,14 +190,14 @@
     font-size: 17px;
     margin-top: 35px;
     margin-bottom: 45px;
-    margin-left: 40px;
-    margin-right: 42px;
-    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 580px;;
   }
 
   @include desktop {
     font-size: 17px;
-    margin-top: 45px;
+    margin-top: 46px;
     margin-bottom: 60px;
     width: 226px;
     margin-left: 80px;

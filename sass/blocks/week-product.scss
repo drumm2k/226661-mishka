@@ -66,7 +66,6 @@
   margin-bottom: 6px;
   z-index: 5;
 
-
   @include tablet {
     font-size: 43px;
     line-height: 50px;
@@ -107,6 +106,7 @@
 }
 
 .week-product__info {
+  margin-bottom: 27px;
   @include tablet {
     margin-bottom: 55px;
   }
@@ -170,26 +170,32 @@
 }
 
 .week-product__image {
-  margin-top: 28px;
   width: 100%;
   height: auto;
   z-index: 1;
+  margin-bottom: 25px;
 
   @include tablet {
-    margin-top: 0;
     position: absolute;
     width: 50%;
     right: 0;
     bottom: -5px;
+    margin-bottom: 0;
   }
 
   @include desktop {
-    margin-top: 0;
     position: absolute;
     width: 50%;
     right: 0;
     top: -52px;
+    margin-bottom: 0;
   }
+}
+
+.week-product__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .week-product__order {
@@ -216,7 +222,6 @@
     font-size: 20px;
     width: 300px;
     margin-bottom: 34px;
-
   }
 }
 
