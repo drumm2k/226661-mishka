@@ -1,4 +1,4 @@
-var modalWindow = document.querySelector('.add-to-cart');
+var modalWindow = document.querySelector(".add-to-cart");
 var weekProductBtn = document.getElementById("add-to-cart");
 
 weekProductBtn.onclick = function() {

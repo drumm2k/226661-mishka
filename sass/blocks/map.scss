@@ -1,20 +1,6 @@
 .map {
   margin-top: 8px;
   margin-bottom: 38px;
-
-  @include tablet {
-    margin-top: 26px;
-  }
-
-  @include desktop {
-    position: absolute;
-    left: 50%;
-    bottom: -38px;
-    z-index: 5;
-  }
-}
-
-.map__image {
   margin: 0 auto;
   display: block;
   position: relative;
@@ -22,11 +8,16 @@
   height: 457px;
 
   @include tablet {
+    margin-top: 26px;
     width: 768px;
     height: 457px;
   }
 
   @include desktop {
+    position: absolute;
+    left: 50%;
+    bottom: -38px;
+    z-index: 5;
     width: 525px;
     height: 457px;
   }
