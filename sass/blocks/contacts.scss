@@ -64,10 +64,12 @@
 .contacts__table {
   font-size: 15px;
   line-height: 30px;
+  margin-bottom: 8px;
 
   @include tablet {
     font-size: 17px;
     margin-top: 24px;
+    margin-bottom: 26px;
   }
 
   @include desktop {
@@ -102,6 +104,7 @@
 .contacts__writeus {
   @include button;
   font-size: 18px;
+  margin-top: 38px;
 
   @include tablet {
     font-size: 17px;
