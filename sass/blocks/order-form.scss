@@ -325,7 +325,7 @@ input[type="radio"]:disabled + .order-form__radio-text::after {
 }
 
 input[type="checkbox"]:checked + .order-form__color-text::after {
-  background-image: url('data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32.666px" height="22.742px" viewBox="0 0 32.666 22.742" enable-background="new 0 0 32.666 22.742" xml:space="preserve"><polygon points="32.666,1.414 31.252,0 11.338,19.914 1.414,9.989 0,11.403 9.924,21.328 9.924,21.328 11.338,22.742 11.338,22.742 11.339,22.742 12.753,21.328 12.752,21.328 "/></svg>');
+  background-image: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2232.666px%22%20height%3D%2222.742px%22%20viewBox%3D%220%200%2032.666%2022.742%22%20enable-background%3D%22new%200%200%2032.666%2022.742%22%20xml%3Aspace%3D%22preserve%22%3E%0A%20%20%3Cpolygon%20points%3D%2232.666%2C1.414%2031.252%2C0%2011.338%2C19.914%201.414%2C9.989%200%2C11.403%209.924%2C21.328%209.924%2C21.328%2011.338%2C22.742%2011.338%2C22.742%2011.339%2C22.742%2012.753%2C21.328%2012.752%2C21.328%20%22%2F%3E%0A%3C%2Fsvg%3E%0A");
   background-repeat: no-repeat;
   background-size: 22px 16px;
   background-position: 50% 50%;
