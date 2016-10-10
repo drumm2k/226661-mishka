@@ -45,7 +45,6 @@ gulp.task("serve", ["style"], function() {
   });
 
   gulp.watch("src/sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("src/*.html", ["copyhtml"]);
   gulp.watch("build/*.html").on("change", server.reload);
 });
 
