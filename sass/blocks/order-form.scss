@@ -171,6 +171,10 @@
   }
 }
 
+input[type="radio"]:checked + .order-form__radio-text::after {
+  background-color: $radio_active;
+}
+
 .order-form__radio:nth-child(2) .order-form__radio-text {
   padding-top: 3px;
   padding-bottom: 7px;
@@ -680,8 +684,4 @@ input[type="checkbox"]:disabled + .order-form__color-text::after {
   &:active {
     color: $button_active;
   }
-}
-
-input[type="radio"]:checked + .order-form__radio-text::after {
-  background-color: $radio_active;
 }
