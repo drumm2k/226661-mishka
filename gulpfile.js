@@ -15,7 +15,7 @@ var server = require("browser-sync").create();
 var run = require("run-sequence");
 
 gulp.task("style", function() {
-  gulp.src("sass/style.scss")
+  gulp.src("src/sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
@@ -29,32 +29,33 @@ gulp.task("style", function() {
         sort: true
       })
     ]))
-    .pipe(gulp.dest("css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(minify())
-    .pipe(server.stream())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("css"));
+    .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
 });
 
 gulp.task("serve", ["style"], function() {
   server.init({
-    server: ".",
+    server: "build",
     notify: false,
     open: true,
     ui: false
   });
 
-  gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
+  gulp.watch("src/sass/**/*.{scss,sass}", ["style"]);
+  gulp.watch("src/*.html", ["copyhtml"]);
+  gulp.watch("build/*.html").on("change", server.reload);
 });
 
 gulp.task("images", function() {
-  return gulp.src("img/**/*.{png,jpg,gif}")
+  return gulp.src("src/img/**/*.{png,jpg,gif}")
     .pipe(imagemin([
-      imagemin.optipng({optimizaionLevel: 3}),
-      imagemin.jpegtran({progressive: ture})
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.jpegtran({progressive: true})
     ]))
-    .pipe(gulp.dest("img"));
+    .pipe(gulp.dest("src/img"));
 });
 
 gulp.task("symbols", function() {
@@ -67,6 +68,24 @@ gulp.task("symbols", function() {
       .pipe(gulp.dest("img"));
 });
 
+gulp.task("svgmin", function() {
+  return gulp.src("src/img/**/*.svg")
+    .pipe(svgmin())
+    .pipe(gulp.dest("src/img"));
+})
+
+gulp.task("copy", function() {
+  return gulp.src([
+    "src/fonts/**/*.{woff,woff2}",
+    "src/*.html",
+    "src/js/*.js",
+    "src/img/*.*"
+  ], {
+    base: "src"
+  })
+    .pipe(gulp.dest("build"));
+});
+
 gulp.task("build", function(fn) {
-  run("style", "images", "symbols", fn);
+  run("images", "svgmin", "copy", "style", fn);
 });
