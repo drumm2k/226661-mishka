@@ -3,27 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
         <nav class="main-nav  main-nav--closed  main-nav--nojs">
-          <a href="index.html"><img class="main-nav__logo" src="img/logo-mobile.svg" alt="Mishka" width="86" height="35"></a>
+          <a href="index.html">
+            <div class="main-nav__logo">
+              <picture>
+                <source media="(min-width:1150px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width:768px)" srcset="img/logo-tablet.svg">
+                <img src="img/logo-mobile.svg" alt="Mishka" title="Mishka">
+              </picture>
+            </div>
+          </a>
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list  main-nav__menu">
-            <li class="main-nav__list-item"><a href="catalog.html">Каталог товаров</a></li>
-            <li class="main-nav__list-item"><a href="form.html">Вязание на заказ</a></li>
+            <li class="main-nav__list-item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
+            <li class="main-nav__list-item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
           </ul>
-          <ul class="main-nav__list  main-nav__cart">
-            <li class="main-nav__list-item  main-nav__cart-search"><a href="#">Поиск по сайту</a></li>
-            <li class="main-nav__list-item  main-nav__cart-cart"><a href="#">Корзина: <span class="main-nav__cart-counter">пока пуста</span></a></li>
+          <ul class="main-nav__list  main-nav__user">
+            <li class="main-nav__list-item  main-nav__user-search"><a class="main-nav__link" href="#">Поиск по сайту</a></li>
+            <li class="main-nav__list-item  main-nav__user-cart"><a class="main-nav__link" href="#">Корзина: <span class="main-nav__cart-counter">пока пуста</span></a></li>
           </ul>
           <ul class="main-nav__list  main-nav__special">
-            <li class="main-nav__list-item"><a href="#">Новые поступления</a></li>
-            <li class="main-nav__list-item"><a href="#">Распродажа</a></li>
+            <li class="main-nav__list-item"><a class="main-nav__link" href="arrivals.html">Новые поступления</a></li>
+            <li class="main-nav__list-item"><a class="main-nav__link" href="sale.html">Распродажа</a></li>
           </ul>
-          <p class="main-nav__delivery">Бесплатная доставка</p>
+          <p class="main-nav__delivery">Бесплатная доставка по России</p>
         </nav>
       </div>
     </header>
@@ -35,43 +45,67 @@
       <section class="catalog">
         <div class="catalog__wrapper">
           <div class="product">
-            <a class="product__link" href="#">
-              <img class="product__image" src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
+            <a class="product__link" href="product.html">
+              <div class="product__image">
+                <picture>
+                  <source media="(min-width:1150px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width:768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                  <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик" title="Зайчик-попрыгайчик">
+                </picture>
+              </div>
             </a>
             <div class="product__wrapper">
-              <h2 class="product__title">Зайчик-попрыгайчик</h2>
+              <h2 class="product__title">
+                <a class="product__link" href="product.html">Зайчик-попрыгайчик</a>
+              </h2>
               <p class="product__desc">Рост 30 см, вес 200 г</p>
               <div class="product__wrapper-buy">
                 <span class="product__price">1 200 руб.</span>
-                <a class="product__buy" href="#">Добавить в корзину</a>
+                <a class="product__link  product__cart" href="product.html">Добавить в корзину</a>
               </div>
             </div>
           </div>
 
           <div class="product">
-            <a class="product__link" href="#">
-              <img class="product__image" src="img/photo-2-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195">
+            <a class="product__link" href="product.html">
+              <div class="product__image">
+                <picture>
+                  <source media="(min-width:1150px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width:768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                  <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Корзинка для белья" title="Корзинка для белья">
+                </picture>
+              </div>
             </a>
             <div class="product__wrapper">
-              <h2 class="product__title">Корзинка для белья</h2>
-              <p class="product__desc">Диаметр 15см, высота 10см</p>
+              <h2 class="product__title">
+                <a class="product__link" href="product.html">Корзинка для белья</a>
+              </h2>
+              <p class="product__desc">Диаметр 15 см, высота 10 см</p>
               <div class="product__wrapper-buy">
                 <span class="product__price">690 руб.</span>
-                <a class="product__buy" href="#">Добавить в корзину</a>
+                <a class="product__link  product__cart" href="product.html">Добавить в корзину</a>
               </div>
             </div>
           </div>
 
           <div class="product">
-            <a class="product__link" href="#">
-              <img class="product__image" src="img/photo-3-mobile@1x.jpg" alt="Большая корзина для игрушек" width="260" height="195">
+            <a class="product__link" href="product.html">
+              <div class="product__image">
+                <picture>
+                  <source media="(min-width:1150px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width:768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                  <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Большая корзина для игрушек" title="Большая корзина для игрушек">
+                </picture>
+              </div>
             </a>
             <div class="product__wrapper">
-              <h2 class="product__title">Большая корзина для игрушек</h2>
-              <p class="product__desc">Диаметр 30см, высота 30см</p>
+              <h2 class="product__title">
+                <a class="product__link" href="product.html">Большая корзинка для игрушек</a>
+              </h2>
+              <p class="product__desc">Диаметр 30 см, высота 30 см</p>
               <div class="product__wrapper-buy">
                 <span class="product__price">1 500 руб.</span>
-                <a class="product__buy" href="#">Добавить в корзину</a>
+                <a class="product__link  product__cart" href="product.html">Добавить в корзину</a>
               </div>
             </div>
           </div>
@@ -79,48 +113,60 @@
       </section>
 
       <section class="production">
-        <div class="production__wrapper">
+        <div class="production__wrapper  production__wrapper-bordertop">
           <h2 class="production__title">Процесс производства</h2>
-          <video class="production__video" poster="img/video-mobile@1x.jpg" width="260" height="150">
+        </div>
+        <div class="production__video">
+          <video class="production__video-thumbnail" poster="img/video-mobile@1x.jpg" width="100%" height="100%">
             <source src="#" type="video/mp4">
           </video>
+          <button class="production__video-play"></button>
+        </div>
+        <div class="production__wrapper  production__wrapper-borderbottom">
           <p class="production__text">
             По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
           </p>
-          <a class="production__order" href="#">Сделать заказ</a>
+          <a class="production__order" href="form.html">Сделать заказ</a>
         </div>
       </section>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a href="index.html"><img class="page-footer__logo" src="img/logo-mobile.svg" width="102" height="34" alt="Mishka"></a>
+        <a class="page-footer__logo" href="#">Мишка</a>
         <ul class="page-footer__social">
-          <li class="page-footer__social-item"><a class="social-link  social-link--instagram" href="#" target="_blank">Instagram</a></li>
-          <li class="page-footer__social-item"><a class="social-link  social-link--facebook" href="#" target="_blank">Facebook</a></li>
-          <li class="page-footer__social-item"><a class="social-link  social-link--twitter" href="#" target="_blank">Twitter</a></li>
+          <li class="page-footer__social-item"><a class="social-link  social-link--instagram" href="#">Instagram</a></li>
+          <li class="page-footer__social-item"><a class="social-link  social-link--facebook" href="#">Facebook</a></li>
+          <li class="page-footer__social-item"><a class="social-link  social-link--twitter" href="#">Twitter</a></li>
         </ul>
         <p class="page-footer__copyright">
-          Разработано <a class="page-footer__copyright-link" href="https://www.htmlacademy.ru"><img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy" title="HTML Academy"></a>
+          <a class="page-footer__copyright-link" href="https://www.htmlacademy.ru" target="_blank">
+            Разработано <span class="page-footer__copyright-logo">HTML Academy</span>
+          </a>
         </p>
       </div>
     </footer>
 
-    <!-- modal -->
+    <!-- Modal window -->
     <section class="add-to-cart">
-      <div class="add-to-cart__wrapper">
+      <div class="add-to-cart__content">
         <h3 class="add-to-cart__title">Добавить в корзину</h3>
-        <p class="add-to-cart__size">Выберите размер</p>
-        <form class="add-to-cart-form" action="#" method="get">
-          <input type="radio" name="add-size" value="S" id="radio-1" checked>
-          <label for="radio-1">S</label>
-          <input type="radio" name="add-size" value="M" id="radio-2">
-          <label for="radio-2">M</label>
-          <input type="radio" name="add-size" value="L" id="radio-3">
-          <label for="radio-3">L</label>
+        <span class="add-to-cart__description">Выберите размер:</span>
+        <form class="add-to-cart__form" action="#" method="get">
+          <div class="add-to-cart__form-wrapper">
+            <input type="radio" name="add-size" value="S" id="radio-1" checked>
+            <label class="add-to-cart__label" for="radio-1">S</label>
+            <input type="radio" name="add-size" value="M" id="radio-2">
+            <label class="add-to-cart__label" for="radio-2">M</label>
+            <input type="radio" name="add-size" value="L" id="radio-3">
+            <label class="add-to-cart__label" for="radio-3">L</label>
+          </div>
           <button class="add-to-cart__button">Добавить</button>
         </form>
       </div>
     </section>
+
+    <script src="js/toggle.js"></script>
+    <script src="js/add-to-cart.js"></script>
   </body>
 </html>

@@ -1,9 +1,3 @@
-$font-stack: "Open Sans";
-$sans-serif-stack: $font-stack, "Arial", sans-serif;
-
-$regular: 400;
-$bold: 700;
-
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensans.woff") format("woff"),
@@ -23,10 +17,10 @@ body {
   font-family: $sans-serif-stack;
   font-size: 15px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: $regular;
 }
 
 a {
   text-decoration: none;
-  color: #444444;
+  color: $text_color;
 }

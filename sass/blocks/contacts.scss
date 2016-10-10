@@ -3,26 +3,79 @@
 }
 
 .contacts {
-  margin-top: 160px;
-  position: relative;
+  margin-top: 36px;
+  margin-bottom: 39px;
+
+  @include tablet {
+    margin-top: 68px;
+    margin-bottom: 58px;
+  }
+
+  @include desktop {
+    margin-top: 147px;
+    margin-bottom: 105px;
+    position: relative;
+  }
 }
 
 .contacts__title {
+  position: relative;
   margin: 0;
   font-size: 18px;
   line-height: 30px;
-  font-weight: 700;
+  font-weight: $bold;
+  padding-bottom: 25px;
+
+  @include tablet {
+    font-size: 43px;
+    line-height: 50px;
+    margin-left: -5px;
+  }
 
   @include desktop {
-    margin-top: 75px;
-    margin-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
+    margin-left: 173px;
+  }
+}
+
+.contacts__title::after {
+  content: "";
+  position: absolute;
+  background-image: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2246.68px%22%20height%3D%2281.691px%22%20viewBox%3D%22-11.34%20-28.346%2046.68%2081.691%22%20enable-background%3D%22new%20-11.34%20-28.346%2046.68%2081.691%22%20xml%3Aspace%3D%22preserve%22%3E%0A%20%20%3Cg%20id%3D%22miu%22%3E%0A%20%20%20%20%3Cg%20id%3D%22Artboard-1%22%20transform%3D%22translate%28-755.000000%2C%20-443.000000%29%22%3E%0A%20%20%20%20%20%20%3Cg%20id%3D%22slice%22%20transform%3D%22translate%28215.000000%2C%20119.000000%29%22%3E%0A%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%3Cg%20id%3D%22editor-flag-triangle-notification-glyph%22%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%2363D1BB%22%20d%3D%22M751.439%2C418.545v38.9l38.9-19.451L751.439%2C418.545z%20M743.66%2C496.346v-81.691h3.805v81.691H743.66z%22%2F%3E%0A%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%3C%2Fg%3E%0A%20%20%3Cg%3E%0A%20%20%20%20%3Crect%20x%3D%22-11.34%22%20y%3D%22-28.346%22%20fill%3D%22%23231F20%22%20width%3D%223.805%22%20height%3D%2281.691%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A");
+  background-repeat: no-repeat;
+  width: 47px;
+  height: 82px;
+  display: none;
+
+  @include tablet {
+    display: block;
+    top: -16px;
+    right: 3px;
+  }
+
+  @include desktop {
+    display: block;
+    top: -8px;
+    left: -110px;
   }
 }
 
 .contacts__table {
+  font-size: 15px;
+  line-height: 30px;
+  margin-bottom: 8px;
+
+  @include tablet {
+    font-size: 17px;
+    margin-top: 24px;
+    margin-bottom: 26px;
+  }
+
   @include desktop {
-    margin-top: 65px;
+    font-size: 17px;
     margin-left: 175px;
+    margin-top: 24px;
   }
 }
 
@@ -35,70 +88,34 @@
 }
 
 .contacts__table-field {
-  width: 40%;
+  width: 77px;
   vertical-align: top;
-
-  @include tablet {
-    width: 200px;
-  }
-
-  @include desktop {
-    width: 70px;
-  }
 }
 
 .contacts__table-value {
+  padding-bottom: 30px;
   vertical-align: top;
 
     @include tablet {
-    width: 240px;
-    padding-right: 60px;
+      width: 257px;
     }
-
-    @include desktop {
-    width: 120px;
-    }
-}
-
-.map {
-  @include desktop {
-    position: absolute;
-    left: 50%;
-    bottom: 0px;
-    z-index: 999;
-  }
-}
-
-.map__image {
-  margin: 0 auto;
-  display: block;
-
-  @include desktop {
-    width: 525px;
-    height: 427px;
-  }
 }
 
 .contacts__writeus {
-  display: block;
+  @include button;
   font-size: 18px;
-  line-height: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  color: $text_color;
-  width: 256px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-bottom: 35px;
-  margin-top: 35px;
-  border: 2px solid $button_border;
-  background: none;
+  margin-top: 38px;
+
+  @include tablet {
+    font-size: 17px;
+    width: 226px;
+    margin-top: 55px;
+  }
 
   @include desktop {
-    margin-top: 100px;
-    margin-left: 175px;
+    font-size: 17px;
+    width: 226px;
+    margin-top: 49px;
+    margin-left: 177px;
   }
 }

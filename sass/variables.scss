@@ -1,17 +1,39 @@
 // Widths
+$mobile-width: 767px;
 $tablet-width: 768px;
 $desktop-width: 1150px;
 
+// Fonts
+$font-stack: "Open Sans";
+$font-alt: "Arial";
+$sans-serif-stack: $font-stack, $font-alt, sans-serif;
+$regular: 400;
+$bold: 700;
+
+// Retina
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
 // Text colors
 $text_color: #444444;
+$nav_link: #000000;
+$title_link: #ffffff;
+$email_underline: #62d1ba;
+$email_hover: #46c1ae;
+$email_active: #c7ece7;
+$email_underline_active: #ecf9f7;
+$form_title: #63d1bb;
 
 // Title menu buttons
 $accent_color: #63d1bb;
 $accent_color2: #56c3b2;
 
 // Backgrounds
-$title_background: #fafafa;
+$main_nav_bg: #ffffff;
+$title_index_background: #fafafa;
+$title_background: #f1f1f1;
 $footer_background: #f1f1f1;
+$production_video_background: #f1f1f1;
 
 // Border colors
 $week_product_table_border: #ececec;
@@ -24,7 +46,31 @@ $main_nav_divider: #ececec;
 $footer_divider: #e5e5e5;
 
 // Forms
-$button_color: #ffffff;
-$button_border: #444444;
-
+$forms_background: #f1f1f1;
 $forms_border: #000000;
+$forms_border_focus: #62d1ba;
+$forms_border_error: #f0b1b1;
+
+// Buttons
+$button_color: #ffffff;
+$button_text: #000000;
+$button_border: #444444;
+$button_hover_bg: #444444;
+$button_hover_text: #ffffff;
+$button_active: #8d8d8d;
+
+// Form Radio
+$radio_border: #444444;
+$radio_border_hover: #63d1bb;
+$radio_border_active: #c7c7c7;
+$radio_inside: #ffffff;
+$radio_active: #63d1bb;
+
+// Add to cart
+$ac_background: #ffffff;
+$ac_radio_border: #ececec;
+$ac_radio_border_hover: #c7c7c7;
+$ac_radio_border_active: #62d1ba;
+$ac_button_background: #63d1bb;
+$ac_button_text: #ffffff;
+$ac_button_hover: #56c3b2;

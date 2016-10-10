@@ -2,8 +2,14 @@
   @include wrapper;
   margin-top: 30px;
 
+  @include tablet {
+    margin-top: 82px;
+  }
+
   @include desktop {
     display: flex;
     justify-content: space-between;
+    margin-top: 127px;
+    flex-wrap: wrap;
   }
 }

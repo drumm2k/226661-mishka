@@ -1,3 +1,16 @@
+.page-header {
+    border-top: 1px solid $main_nav_divider;
+    min-height: 79px;
+
+    @include tablet {
+      border: none;
+    }
+
+    @include desktop {
+      border: none;
+    }
+}
+
 .page-header__wrapper {
   @include wrapper_wide;
   position: relative;

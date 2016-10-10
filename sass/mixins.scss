@@ -48,6 +48,12 @@
 // mixin for width
 // ============================
 
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
     @content;
@@ -56,6 +62,46 @@
 
 @mixin desktop {
   @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+// ============================
+// mixin for button
+// ============================
+
+@mixin button {
+  display: block;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: $bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: $text_color;
+  width: 256px;
+  margin: 0 auto;
+  margin-top: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: 2px solid $button_border;
+  background: none;
+
+  &:hover {
+    background-color: $button_hover_bg;
+    color: $button_hover_text;
+  }
+
+  &:active {
+    color: $button_active;
+  }
+}
+
+// ============================
+// mixin for retina
+// ============================
+
+@mixin retina {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     @content;
   }
 }

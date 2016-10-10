@@ -1,72 +1,144 @@
 .week-product__wrapper {
   @include wrapper;
-
-  @include tablet {
-    position: relative;
-  }
-  @include desktop {
-    position: relative;
-  }
+  position: relative;
 }
 
 .week-product {
-  margin-top: 33px;
-}
-
-.week-product__name {
-  font-size: 25px;
-  line-height: 30px;
-  font-weight: 700;
-  margin: 0;
-
-  @include desktop {
-    margin-top: 50px;
-    margin-left: 175px;
-  }
-}
-
-.week-product__title {
-  font-size: 17px;
-  line-height: 16px;
-  font-weight: 700;
-  color: $accent_color;
-  padding-top: 14px;
-  margin: 0;
-  text-transform: uppercase;
+  position: relative;
+  margin-top: 27px;
+  padding-bottom: 43px;
 
   @include tablet {
-    padding-top: 0;
-    position: absolute;
-    top: 5px;
-    right: 28px;
-    width: 70px;
+    margin-top: 45px;
+    padding-bottom: 63px;
   }
+
   @include desktop {
-    padding-top: 0;
-    position: absolute;
-    width: 70px;
-    left: 50px;
-    top: 50px;
+    margin-top: 123px;
+    padding-bottom: 90px;
   }
 }
 
-.week-product__desc {
+.week-product::after {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_2%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%221150px%22%20height%3D%2223px%22%20viewBox%3D%220%200%201150%2023%22%20enable-background%3D%22new%200%200%201150%2023%22%20xml%3Aspace%3D%22preserve%22%3E%0A%20%20%3Cg%3E%0A%20%20%20%20%3Cpath%20fill%3D%22%23E6E7E8%22%20d%3D%22M1150%2C23c-9.017%2C0-13.728-4.589-17.514-8.276c-3.412-3.323-5.877-5.724-11.234-5.724%20c-5.358%2C0-7.823%2C2.401-11.235%2C5.724c-3.786%2C3.688-8.497%2C8.276-17.514%2C8.276s-13.728-4.589-17.514-8.276%20c-3.412-3.323-5.877-5.724-11.234-5.724s-7.822%2C2.401-11.234%2C5.724c-3.786%2C3.688-8.497%2C8.276-17.514%2C8.276%20s-13.729-4.589-17.515-8.276C1014.08%2C11.401%2C1011.615%2C9%2C1006.257%2C9c-5.357%2C0-7.822%2C2.401-11.234%2C5.724%20C991.236%2C18.411%2C986.525%2C23%2C977.509%2C23s-13.728-4.589-17.514-8.276C956.583%2C11.401%2C954.118%2C9%2C948.761%2C9s-7.822%2C2.401-11.234%2C5.724%20C933.74%2C18.411%2C929.028%2C23%2C920.012%2C23s-13.729-4.589-17.515-8.276C899.085%2C11.401%2C896.62%2C9%2C891.263%2C9s-7.822%2C2.401-11.234%2C5.724%20C876.242%2C18.411%2C871.53%2C23%2C862.514%2C23s-13.729-4.589-17.515-8.276C841.587%2C11.401%2C839.122%2C9%2C833.764%2C9%20c-5.355%2C0-7.82%2C2.4-11.231%2C5.723C818.747%2C18.411%2C814.036%2C23%2C805.021%2C23c-9.017%2C0-13.729-4.589-17.515-8.276%20C784.094%2C11.401%2C781.629%2C9%2C776.271%2C9c-5.356%2C0-7.821%2C2.401-11.232%2C5.723C761.253%2C18.411%2C756.542%2C23%2C747.526%2C23%20c-9.017%2C0-13.729-4.589-17.514-8.277C726.602%2C11.401%2C724.137%2C9%2C718.779%2C9s-7.821%2C2.401-11.233%2C5.723%20C703.761%2C18.411%2C699.049%2C23%2C690.032%2C23c-9.016%2C0-13.727-4.589-17.512-8.276C669.109%2C11.401%2C666.645%2C9%2C661.287%2C9%20s-7.822%2C2.401-11.234%2C5.724C646.267%2C18.411%2C641.556%2C23%2C632.539%2C23s-13.729-4.589-17.515-8.276C611.612%2C11.401%2C609.147%2C9%2C603.788%2C9%20c-5.357%2C0-7.822%2C2.401-11.234%2C5.724C588.768%2C18.411%2C584.057%2C23%2C575.04%2C23c-9.016%2C0-13.728-4.589-17.514-8.276%20C554.115%2C11.401%2C551.65%2C9%2C546.292%2C9s-7.823%2C2.401-11.234%2C5.724C531.272%2C18.411%2C526.561%2C23%2C517.544%2C23%20c-9.017%2C0-13.729-4.589-17.514-8.276C496.619%2C11.401%2C494.153%2C9%2C488.796%2C9c-5.358%2C0-7.823%2C2.401-11.235%2C5.724%20C473.774%2C18.411%2C469.062%2C23%2C460.046%2C23c-9.017%2C0-13.729-4.589-17.516-8.276C439.118%2C11.401%2C436.653%2C9%2C431.293%2C9%20c-5.358%2C0-7.823%2C2.401-11.235%2C5.724C416.272%2C18.411%2C411.56%2C23%2C402.543%2C23s-13.729-4.589-17.515-8.276%20C381.616%2C11.401%2C379.151%2C9%2C373.792%2C9c-5.358%2C0-7.823%2C2.401-11.235%2C5.724C358.771%2C18.411%2C354.059%2C23%2C345.042%2C23%20s-13.729-4.589-17.515-8.276C324.114%2C11.401%2C321.649%2C9%2C316.291%2C9s-7.824%2C2.401-11.236%2C5.724C301.269%2C18.411%2C296.556%2C23%2C287.539%2C23%20c-9.018%2C0-13.729-4.589-17.516-8.276C266.611%2C11.401%2C264.145%2C9%2C258.786%2C9c-5.357%2C0-7.822%2C2.401-11.234%2C5.724%20C243.767%2C18.411%2C239.055%2C23%2C230.039%2C23c-9.017%2C0-13.729-4.589-17.515-8.276C209.112%2C11.401%2C206.647%2C9%2C201.289%2C9%20s-7.824%2C2.401-11.236%2C5.724C186.267%2C18.411%2C181.555%2C23%2C172.538%2C23c-9.018%2C0-13.73-4.589-17.517-8.276%20C151.609%2C11.401%2C149.144%2C9%2C143.784%2C9c-5.36%2C0-7.825%2C2.401-11.238%2C5.724c-3.787%2C3.687-8.5%2C8.276-17.517%2C8.276%20c-9.018%2C0-13.73-4.589-17.517-8.276C94.099%2C11.401%2C91.633%2C9%2C86.273%2C9s-7.826%2C2.401-11.239%2C5.724C71.249%2C18.411%2C66.536%2C23%2C57.518%2C23%20C48.5%2C23%2C43.787%2C18.412%2C40%2C14.724C36.586%2C11.401%2C34.12%2C9%2C28.759%2C9s-7.827%2C2.401-11.24%2C5.724C13.732%2C18.411%2C9.019%2C23%2C0%2C23v-9%20c5.361%2C0%2C7.827-2.401%2C11.241-5.724C15.028%2C4.588%2C19.741%2C0%2C28.759%2C0s13.731%2C4.588%2C17.519%2C8.276C49.691%2C11.599%2C52.157%2C14%2C57.518%2C14%20c5.36%2C0%2C7.825-2.401%2C11.238-5.724C72.543%2C4.589%2C77.255%2C0%2C86.273%2C0s13.73%2C4.589%2C17.517%2C8.276c3.413%2C3.323%2C5.879%2C5.724%2C11.239%2C5.724%20s7.826-2.401%2C11.238-5.724C130.054%2C4.589%2C134.767%2C0%2C143.784%2C0s13.73%2C4.589%2C17.517%2C8.276c3.412%2C3.323%2C5.878%2C5.724%2C11.237%2C5.724%20c5.358%2C0%2C7.824-2.401%2C11.236-5.724C187.56%2C4.589%2C192.272%2C0%2C201.289%2C0c9.017%2C0%2C13.729%2C4.589%2C17.515%2C8.276%20c3.412%2C3.323%2C5.877%2C5.724%2C11.235%2C5.724c5.357%2C0%2C7.822-2.401%2C11.234-5.724C245.059%2C4.589%2C249.77%2C0%2C258.786%2C0%20c9.017%2C0%2C13.729%2C4.589%2C17.516%2C8.276C279.714%2C11.599%2C282.18%2C14%2C287.539%2C14c5.359%2C0%2C7.824-2.401%2C11.236-5.724%20C302.562%2C4.589%2C307.274%2C0%2C316.291%2C0c9.017%2C0%2C13.729%2C4.589%2C17.515%2C8.276c3.412%2C3.323%2C5.877%2C5.724%2C11.236%2C5.724%20c5.359%2C0%2C7.824-2.401%2C11.236-5.724C360.063%2C4.589%2C364.775%2C0%2C373.792%2C0c9.017%2C0%2C13.729%2C4.589%2C17.516%2C8.276%20C394.72%2C11.599%2C397.185%2C14%2C402.543%2C14s7.823-2.401%2C11.235-5.724C417.565%2C4.589%2C422.277%2C0%2C431.293%2C0%20c9.018%2C0%2C13.729%2C4.589%2C17.516%2C8.276c3.412%2C3.323%2C5.877%2C5.724%2C11.236%2C5.724c5.358%2C0%2C7.823-2.401%2C11.235-5.724%20C475.067%2C4.589%2C479.779%2C0%2C488.796%2C0c9.016%2C0%2C13.728%2C4.589%2C17.514%2C8.276c3.412%2C3.323%2C5.877%2C5.724%2C11.235%2C5.724%20c5.357%2C0%2C7.822-2.401%2C11.234-5.724C532.564%2C4.589%2C537.275%2C0%2C546.292%2C0c9.016%2C0%2C13.728%2C4.589%2C17.514%2C8.276%20C567.217%2C11.599%2C569.682%2C14%2C575.04%2C14c5.357%2C0%2C7.822-2.401%2C11.234-5.724C590.061%2C4.589%2C594.771%2C0%2C603.788%2C0%20c9.018%2C0%2C13.729%2C4.589%2C17.516%2C8.276c3.412%2C3.323%2C5.877%2C5.724%2C11.235%2C5.724c5.357%2C0%2C7.822-2.401%2C11.234-5.724%20C647.56%2C4.589%2C652.271%2C0%2C661.287%2C0s13.728%2C4.589%2C17.513%2C8.277C682.211%2C11.6%2C684.676%2C14%2C690.032%2C14%20c5.357%2C0%2C7.822-2.401%2C11.234-5.724C705.052%2C4.589%2C709.764%2C0%2C718.779%2C0s13.728%2C4.589%2C17.513%2C8.276%20c3.412%2C3.323%2C5.877%2C5.724%2C11.234%2C5.724c5.356%2C0%2C7.821-2.401%2C11.232-5.723C762.544%2C4.589%2C767.255%2C0%2C776.271%2C0%20c9.017%2C0%2C13.729%2C4.589%2C17.515%2C8.276c3.412%2C3.323%2C5.877%2C5.724%2C11.235%2C5.724c5.356%2C0%2C7.821-2.401%2C11.232-5.724%20C820.038%2C4.589%2C824.749%2C0%2C833.764%2C0c9.017%2C0%2C13.729%2C4.589%2C17.515%2C8.276C854.69%2C11.599%2C857.155%2C14%2C862.514%2C14%20s7.823-2.401%2C11.235-5.724C877.535%2C4.589%2C882.247%2C0%2C891.263%2C0c9.017%2C0%2C13.728%2C4.589%2C17.514%2C8.276%20c3.412%2C3.323%2C5.877%2C5.724%2C11.235%2C5.724s7.823-2.401%2C11.235-5.724C935.033%2C4.589%2C939.744%2C0%2C948.761%2C0s13.728%2C4.589%2C17.514%2C8.276%20c3.412%2C3.323%2C5.877%2C5.724%2C11.234%2C5.724s7.822-2.401%2C11.234-5.724C992.529%2C4.589%2C997.24%2C0%2C1006.257%2C0s13.729%2C4.589%2C17.515%2C8.276%20c3.412%2C3.323%2C5.877%2C5.724%2C11.235%2C5.724c5.357%2C0%2C7.822-2.401%2C11.234-5.724c3.786-3.688%2C8.497-8.276%2C17.514-8.276%20s13.728%2C4.589%2C17.514%2C8.276c3.412%2C3.323%2C5.877%2C5.724%2C11.234%2C5.724s7.822-2.401%2C11.234-5.724c3.786-3.688%2C8.498-8.276%2C17.515-8.276%20s13.728%2C4.589%2C17.514%2C8.276C1142.178%2C11.599%2C1144.643%2C14%2C1150%2C14V23z%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A");
+  background-repeat: repeat-x;
+  background-size: contain;
+  height: 7px;
+  bottom: 0;
+
+  @include tablet {
+    height: 24px;
+    bottom: -11px;
+  }
+
+  @include desktop {
+    height: 24px;
+    bottom: -7px;
+  }
+}
+
+.week-product__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 25px;
+
+  @include tablet {
+    flex-direction: row;
+  }
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 45px;
+  }
+}
+
+.week-product__header-name {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: $bold;
+  margin: 0;
+  margin-bottom: 6px;
+  z-index: 5;
+
+  @include tablet {
+    font-size: 43px;
+    line-height: 50px;
+    margin-left: -3px;
+    margin-bottom: 25px;
+  }
+
+  @include desktop {
+    font-size: 53px;
+    line-height: 57px;
+    margin-left: 25px;
+  }
+}
+
+.week-product__header-title {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: $bold;
+  color: $accent_color;
+  text-transform: uppercase;
+  z-index: 5;
+  margin: 0;
+
+
+  @include tablet {
+    width: 125px;
+    text-align: center;
+    margin-top: 13px;
+  }
+
+  @include desktop {
+    width: 125px;
+    order: -1;
+    text-align: center;
+    margin-top: 17px;
+    margin-left: 20px;
+  }
+}
+
+.week-product__info {
+  margin-bottom: 27px;
+  @include tablet {
+    margin-bottom: 55px;
+  }
+
+  @include desktop {
+    margin-left: 175px;
+    margin-bottom: 108px;
+  }
+}
+
+.week-product__info-desc {
   font-size: 15px;
   line-height: 24px;
   color: $text_color;
+  margin-bottom: 16px;
 
   @include tablet {
-    width: 260px;
-    margin-top: 50px;
+    font-size: 17px;
+    line-height: 30px;
+    width: 300px;
+    margin-bottom: 33px;
   }
+
   @include desktop {
-    width: 260px;
-    margin-top: 55px;
-    margin-left: 175px;
+    font-size: 17px;
+    line-height: 30px;
+    width: 300px;
+    margin-bottom: 45px;
   }
 }
 
-.week-product__table {
+.week-product__info-table {
   font-size: 15px;
   line-height: 20px;
   color: $text_color;
@@ -75,12 +147,10 @@
 
   @include tablet {
     width: 290px;
-    margin-top: 50px;
   }
+
   @include desktop {
     width: 290px;
-    margin-top: 67px;
-    margin-left: 175px;
   }
 }
 
@@ -89,79 +159,82 @@
 }
 
 .week-product td {
-  padding: 14px 0;
+  padding: 10px 0;
 }
 
 .week-product td:nth-child(1) {
-  width: 40%;
+  width: 97px;
 }
 .week-product td:nth-last-child(1) {
   width: auto;
 }
 
 .week-product__image {
-  margin-top: 28px;
   width: 100%;
   height: auto;
+  z-index: 1;
+  margin-bottom: 25px;
 
   @include tablet {
-    margin-top: 0;
     position: absolute;
     width: 50%;
     right: 0;
-    bottom: 0;
+    bottom: -5px;
+    margin-bottom: 0;
   }
+
   @include desktop {
-    margin-top: 0;
     position: absolute;
     width: 50%;
     right: 0;
-    top: 0;
+    top: -52px;
+    margin-bottom: 0;
   }
 }
 
-.week-product__price {
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: 700;
-  text-align: center;
-  color: $text_color;
-  order:0;
-
-  @include tablet {
-    width: 50%;
-    margin-top: 60px;
-  }
-  @include desktop {
-    width: 290px;
-    margin-top: 110px;
-    margin-left: 175px;
-  }
+.week-product__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .week-product__order {
-  display: block;
-  font-size: 18px;
-  line-height: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
+  @include desktop {
+    margin-left: 175px;
+  }
+}
+
+.week-product__order-price {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: $bold;
   text-align: center;
   color: $text_color;
-  width: 256px;
-  margin: 0 auto;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  border: 2px solid $button_border;
-  background: none;
+  order: 0;
+
+  @include tablet {
+    font-size: 20px;
+    width: 295px;
+    margin-bottom: 34px;
+  }
+
+  @include desktop {
+    font-size: 20px;
+    width: 300px;
+    margin-bottom: 34px;
+  }
+}
+
+.week-product__order-button {
+  @include button;
 
   @include tablet {
     margin-left: 0;
-    margin-top: 34px;
     width: 288px;
   }
+
   @include desktop {
-    margin-left: 175px;
-    margin-top: 34px;
+    margin-left: 0;
     width: 288px;
   }
 }
