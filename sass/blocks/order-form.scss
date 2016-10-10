@@ -29,18 +29,18 @@
   font-size: 13px;
   line-height: 24px;
   color: $text_color;
-  padding-bottom: 10px;
+  margin-bottom: 23px;
 
   @include tablet {
     font-size: 17px;
     line-height: 30px;
-    margin-top: 75px;
+    margin-bottom: 27px;
   }
 
   @include desktop {
     font-size: 17px;
     line-height: 30px;
-    margin-top: 145px;
+    margin-bottom: 27px;
   }
 }
 
