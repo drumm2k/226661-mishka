@@ -1,5 +1,7 @@
 var modalWindow = document.querySelector(".add-to-cart");
-var weekProductBtn = document.getElementById("add-to-cart");
+var weekProductBtn = document.querySelector(".add-to-cart__modal");
+
+weekProductBtn.removeAttribute("href");
 
 weekProductBtn.onclick = function() {
     modalWindow.style.display = "block";

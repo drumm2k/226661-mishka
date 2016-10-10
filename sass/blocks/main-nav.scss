@@ -84,8 +84,6 @@
 }
 
 .main-nav__list-item {
-  border-bottom: 1px solid $main_nav_divider;
-
   @include tablet {
     width: 168px;
     border: none;
