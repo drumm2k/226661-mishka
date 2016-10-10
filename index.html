@@ -50,25 +50,29 @@
 
       <article class="week-product">
         <div class="week-product__wrapper">
-          <h2 class="week-product__name">Вязаные корзинки</h2>
-          <h3 class="week-product__title">Товар недели</h3>
-          <p class="week-product__desc">
-            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-          </p>
-          <table class="week-product__table">
-            <tr>
-              <td>Цвет:</td>
-              <td>«Тиффани»/серый</td>
-            </tr>
-            <tr>
-              <td>Диаметр:</td>
-              <td>25 см</td>
-            </tr>
-            <tr>
-              <td>Высота:</td>
-              <td>15 см</td>
-            </tr>
-          </table>
+          <div class="week-product__header">
+            <h2 class="week-product__header-name">Вязаные корзинки</h2>
+            <h3 class="week-product__header-title">Товар недели</h3>
+          </div>
+          <div class="week-product__info">
+            <p class="week-product__info-desc">
+              Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+            </p>
+            <table class="week-product__info-table">
+              <tr>
+                <td>Цвет:</td>
+                <td>«Тиффани»/серый</td>
+              </tr>
+              <tr>
+                <td>Диаметр:</td>
+                <td>25 см</td>
+              </tr>
+              <tr>
+                <td>Высота:</td>
+                <td>15 см</td>
+              </tr>
+            </table>
+          </div>
           <div class="week-product__image">
             <picture>
               <source media="(min-width:1150px)" srcset="img/triple-set-desktop@1x.jpg">
@@ -76,8 +80,10 @@
               <img src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" title="Вязаные корзинки">
             </picture>
           </div>
-          <p class="week-product__price">Цена: <span class="week_product__price-value">990</span> руб.</p>
-          <a class="week-product__order  add-to-cart__modal" href="product.html">Заказать</a>
+          <div class="week-product__order">
+            <p class="week-product__order-price">Цена: <span class="week_product__price-value">990</span> руб.</p>
+            <a class="week-product__order-button  add-to-cart__modal" href="product.html">Заказать</a>
+          </div>
         </div>
       </article>
 

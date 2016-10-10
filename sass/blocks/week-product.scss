@@ -41,96 +41,116 @@
   }
 }
 
-.week-product__name {
+.week-product__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 25px;
+
+  @include tablet {
+    flex-direction: row;
+  }
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 45px;
+  }
+}
+
+.week-product__header-name {
   font-size: 25px;
   line-height: 30px;
   font-weight: $bold;
   margin: 0;
+  margin-bottom: 6px;
+  z-index: 5;
+
 
   @include tablet {
     font-size: 43px;
     line-height: 50px;
-    margin-left: -5px;
+    margin-left: -3px;
+    margin-bottom: 25px;
   }
 
   @include desktop {
     font-size: 53px;
     line-height: 57px;
-    margin-left: 173px;
-    z-index: 5;
-    position: absolute;
+    margin-left: 25px;
   }
 }
 
-.week-product__title {
+.week-product__header-title {
   font-size: 17px;
   line-height: 16px;
   font-weight: $bold;
   color: $accent_color;
-  margin: 0;
-  padding: 0;
-  margin-top: 7px;
   text-transform: uppercase;
+  z-index: 5;
+  margin: 0;
+
 
   @include tablet {
-    padding-top: 0;
-    position: absolute;
-    top: 5px;
-    right: 28px;
-    width: 70px;
+    width: 125px;
     text-align: center;
+    margin-top: 13px;
   }
 
   @include desktop {
-    padding-top: 0;
-    position: absolute;
-    width: 70px;
-    left: 48px;
-    top: 10px;
+    width: 125px;
+    order: -1;
     text-align: center;
+    margin-top: 17px;
+    margin-left: 20px;
   }
 }
 
-.week-product__desc {
+.week-product__info {
+  @include tablet {
+    margin-bottom: 55px;
+  }
+
+  @include desktop {
+    margin-left: 175px;
+    margin-bottom: 108px;
+  }
+}
+
+.week-product__info-desc {
   font-size: 15px;
   line-height: 24px;
   color: $text_color;
-  margin-top: 24px;
   margin-bottom: 16px;
 
   @include tablet {
     font-size: 17px;
     line-height: 30px;
     width: 300px;
-    margin-top: 50px;
+    margin-bottom: 33px;
   }
 
   @include desktop {
     font-size: 17px;
     line-height: 30px;
     width: 300px;
-    padding-top: 106px;
-    margin-left: 175px;
+    margin-bottom: 45px;
   }
 }
 
-.week-product__table {
+.week-product__info-table {
   font-size: 15px;
   line-height: 20px;
   color: $text_color;
   border-collapse: collapse;
   width: 100%;
-  margin-bottom: 28px;
 
   @include tablet {
     width: 290px;
-    margin-top: 33px;
   }
 
   @include desktop {
     width: 290px;
-    margin-top: 47px;
-    margin-left: 175px;
   }
 }
 
@@ -153,13 +173,14 @@
   margin-top: 28px;
   width: 100%;
   height: auto;
+  z-index: 1;
 
   @include tablet {
     margin-top: 0;
     position: absolute;
     width: 50%;
     right: 0;
-    bottom: 0;
+    bottom: -5px;
   }
 
   @include desktop {
@@ -168,44 +189,47 @@
     width: 50%;
     right: 0;
     top: -52px;
-    z-index: 1;
   }
 }
 
-.week-product__price {
+.week-product__order {
+  @include desktop {
+    margin-left: 175px;
+  }
+}
+
+.week-product__order-price {
   font-size: 17px;
   line-height: 24px;
   font-weight: $bold;
   text-align: center;
   color: $text_color;
-  order:0;
+  order: 0;
 
   @include tablet {
     font-size: 20px;
     width: 295px;
-    margin-top: 54px;
+    margin-bottom: 34px;
   }
 
   @include desktop {
     font-size: 20px;
     width: 300px;
-    margin-top: 108px;
-    margin-left: 175px;
+    margin-bottom: 34px;
+
   }
 }
 
-.week-product__order {
+.week-product__order-button {
   @include button;
 
   @include tablet {
     margin-left: 0;
-    margin-top: 34px;
     width: 288px;
   }
 
   @include desktop {
-    margin-left: 175px;
-    margin-top: 34px;
+    margin-left: 0;
     width: 288px;
   }
 }
