@@ -33,12 +33,12 @@
   }
 }
 
-.production__wrapper-bordertop {
+.production__wrapper--bordertop {
   border: 1px solid $product_border;
   border-bottom: none;
 }
 
-.production__wrapper-borderbottom {
+.production__wrapper--borderbottom {
   border: 1px solid $product_border;
   border-top: none;
 }
