@@ -133,7 +133,7 @@ a[href] > .main-nav__logo {
 
 
 .main-nav__list--menu .main-nav__list-item {
-  @include tablet{
+  @include tablet {
     padding-top: 17px;
   }
 }
