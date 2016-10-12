@@ -94,13 +94,14 @@
   line-height: 0;
   width: 260px;
   height: 150px;
+  overflow: hidden;
 
   @include tablet {
     order: -1;
     width: 668px;
     height: 455px;
   }
-  
+
   @include desktop {
     position: absolute;
     left: 0px;
