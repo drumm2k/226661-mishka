@@ -92,31 +92,27 @@
   display: block;
   position: relative;
   line-height: 0;
-  background-color: $production_video_background;
+  width: 260px;
+  height: 150px;
 
   @include tablet {
     order: -1;
+    width: 668px;
+    height: 455px;
   }
+  
   @include desktop {
     position: absolute;
     left: 0px;
     top: 0px;
+    width: 682px;
+    height: 455px;
   }
 }
 
 .production__video-thumbnail {
-  width: 260px;
-  height: 150px;
-
-    @include tablet {
-      width: 668px;
-      height: 455px;
-    }
-
-    @include desktop {
-      width: 682px;
-      height: 455px;
-    }
+  width: 100%;
+  height: auto;
 }
 
 .production__video-play {

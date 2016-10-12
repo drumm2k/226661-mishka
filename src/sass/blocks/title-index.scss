@@ -80,6 +80,11 @@
     background-position: 50% 0;
     padding-top: 153px;
     padding-bottom: 374px;
+    background-image: url("../img/hero-desktop@1x.jpg");
+
+    @include retina {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
   }
 
   @include desktop {

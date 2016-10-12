@@ -7,6 +7,14 @@
     flex-direction: row;
     margin-bottom: 54px;
   }
+
+  @include desktop {
+    margin-right: 52px;
+  }
+}
+
+.product:nth-child(3n+3) {
+  margin-right: 0px;
 }
 
 .product__image {

@@ -55,10 +55,6 @@ input[type="email"] {
   &:hover, &:focus {
     border-bottom: 2px solid $forms_border_focus;
   }
-
-  &:error {
-    border-bottom: 2px solid $forms_border_error;
-  }
 }
 
 textarea {
@@ -68,10 +64,6 @@ textarea {
 
   &:hover, &:focus {
     border: 2px solid $forms_border_focus;
-  }
-
-  &:error {
-    border: 2px solid $forms_border_error;
   }
 }
 
