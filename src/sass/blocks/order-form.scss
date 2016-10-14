@@ -685,11 +685,3 @@ input[type="checkbox"]:disabled + .order-form__color-text::after {
     color: $button_active;
   }
 }
-
-.order-form_text--error {
-    border-bottom: 2px solid $forms_border_error;
-}
-
-.order-form_comment--error {
-    border: 2px solid $forms_border_error;
-}
